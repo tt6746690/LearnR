@@ -4,20 +4,7 @@ library('IDPmisc')
 library('ggplot2')
 # https://rpubs.com/davoodastaraky/dataTable
 
-# pre config
-.First <- function(){
-  print("\nWelcome at", date(), "\n")
-  options(editor="atom")
-}
 
-# store the current directory
-# initial.dir <- getwd()
-
-# change to new directory
-# setwd("C:/Users/PeiqiWang/Desktop/LearningR")
-
-# set output files
-# sink("output.txt")
 
 # declare variables
 refGene = 'B2m'
