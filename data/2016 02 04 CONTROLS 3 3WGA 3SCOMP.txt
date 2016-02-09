@@ -1,0 +1,95 @@
+SDS 2.3	AQ Results	1.0
+Filename	2016 02 04 CONTROLS 3 3WGA 3SCOMP
+PlateID	
+Assay Type	Absolute Quantification
+Run DateTime	2/4/16 10:18:23 PM
+Operator	
+ThermalCycleParams	
+
+Sample Information
+
+Well	Sample Name	Detector Name	Reporter	Task	Ct	Quantity	Qty Mean	Qty StdDev	Ct Median	Ct Mean	Ct StdDev	Baseline Type	Baseline Start	Baseline Stop	Threshold Type	Threshold	FOS	HMD	LME	EW	BPR	NAW	HNS	HRN	EAF	BAF	TAF	CAF	
+313	23N1 SCOMP	B2m	SYBR	Unknown	30.176775				30.24636	30.235052	0.053526375	Automatic			Automatic	0.17048654													
+314	23N1 SCOMP	B2m	SYBR	Unknown	30.28202				30.24636	30.235052	0.053526375	Automatic			Automatic	0.17048654													
+315	23N1 SCOMP	B2m	SYBR	Unknown	30.24636				30.24636	30.235052	0.053526375	Automatic			Automatic	0.17048654													
+317	23N2 SCOMP	B2m	SYBR	Unknown	29.362911				29.832441	29.697123	0.29117706	Automatic			Automatic	0.17048654													
+318	23N2 SCOMP	B2m	SYBR	Unknown	29.896019				29.832441	29.697123	0.29117706	Automatic			Automatic	0.17048654				true									
+319	23N2 SCOMP	B2m	SYBR	Unknown	29.832441				29.832441	29.697123	0.29117706	Automatic			Automatic	0.17048654													
+321	35N2 SCOMP	B2m	SYBR	Unknown	28.903109				24.850378	25.947687	2.5875828	Automatic			Automatic	0.17048654													
+322	35N2 SCOMP	B2m	SYBR	Unknown	24.850378				24.850378	25.947687	2.5875828	Automatic			Automatic	0.17048654													
+323	35N2 SCOMP	B2m	SYBR	Unknown	24.089579				24.850378	25.947687	2.5875828	Automatic			Automatic	0.17048654													
+289	N1 SCOMP	B2m	SYBR	Unknown	28.087378				27.22665	27.269545	0.79725444	Automatic			Automatic	0.17048654													
+290	N1 SCOMP	B2m	SYBR	Unknown	26.4946				27.22665	27.269545	0.79725444	Automatic			Automatic	0.17048654													
+291	N1 SCOMP	B2m	SYBR	Unknown	27.22665				27.22665	27.269545	0.79725444	Automatic			Automatic	0.17048654							true						
+337	N25WGA	B2m	SYBR	Unknown	21.4314				22.968996	22.919474	1.4639424	Automatic			Automatic	0.17048654													
+338	N25WGA	B2m	SYBR	Unknown	24.358028				22.968996	22.919474	1.4639424	Automatic			Automatic	0.17048654													
+339	N25WGA	B2m	SYBR	Unknown	22.968996				22.968996	22.919474	1.4639424	Automatic			Automatic	0.17048654													
+341	N31WGA	B2m	SYBR	Unknown	22.166805				22.166805	22.12146	0.10012109	Automatic			Automatic	0.17048654													
+342	N31WGA	B2m	SYBR	Unknown	22.00669				22.166805	22.12146	0.10012109	Automatic			Automatic	0.17048654													
+343	N31WGA	B2m	SYBR	Unknown	22.190886				22.166805	22.12146	0.10012109	Automatic			Automatic	0.17048654													
+361	N32	B2m	SYBR	Unknown	20.811546				20.65227	20.63688	0.18284501	Automatic			Automatic	0.17048654													
+362	N32	B2m	SYBR	Unknown	20.65227				20.65227	20.63688	0.18284501	Automatic			Automatic	0.17048654													
+363	N32	B2m	SYBR	Unknown	20.446829				20.65227	20.63688	0.18284501	Automatic			Automatic	0.17048654													
+293	N34W CONTROL	B2m	SYBR	Unknown	23.570778				23.317692	23.394941	0.15265344	Automatic			Automatic	0.17048654													
+294	N34W CONTROL	B2m	SYBR	Unknown	23.29635				23.317692	23.394941	0.15265344	Automatic			Automatic	0.17048654													
+295	N34W CONTROL	B2m	SYBR	Unknown	23.317692				23.317692	23.394941	0.15265344	Automatic			Automatic	0.17048654													
+345	N34WGA	B2m	SYBR	Unknown	23.380512				22.49344	22.756754	0.5423674	Automatic			Automatic	0.17048654							true						
+346	N34WGA	B2m	SYBR	Unknown	22.49344				22.49344	22.756754	0.5423674	Automatic			Automatic	0.17048654													
+347	N34WGA	B2m	SYBR	Unknown	22.396315				22.49344	22.756754	0.5423674	Automatic			Automatic	0.17048654													
+365	N37	B2m	SYBR	Unknown	20.828463				22.017664	21.849154	0.94774044	Automatic			Automatic	0.17048654													
+366	N37	B2m	SYBR	Unknown	22.701338				22.017664	21.849154	0.94774044	Automatic			Automatic	0.17048654													
+367	N37	B2m	SYBR	Unknown	22.017664				22.017664	21.849154	0.94774044	Automatic			Automatic	0.17048654													
+369	N40	B2m	SYBR	Unknown	21.96953				21.96953	21.796143	0.36272883	Automatic			Automatic	0.17048654													
+370	N40	B2m	SYBR	Unknown	22.039637				21.96953	21.796143	0.36272883	Automatic			Automatic	0.17048654													
+371	N40	B2m	SYBR	Unknown	21.37926				21.96953	21.796143	0.36272883	Automatic			Automatic	0.17048654													
+297	NTC	B2m	SYBR	Unknown	15.058001							Automatic			Automatic	0.17048654				true									
+298	NTC	B2m	SYBR	Unknown	Undetermined							Automatic			Automatic	0.17048654				true								true	
+Slope		cycles/log decade
+Y-Intercept		
+R^2		
+
+
+Well	Sample Name	Detector Name	Reporter	Task	Ct	Quantity	Qty Mean	Qty StdDev	Ct Median	Ct Mean	Ct StdDev	Baseline Type	Baseline Start	Baseline Stop	Threshold Type	Threshold	FOS	HMD	LME	EW	BPR	NAW	HNS	HRN	EAF	BAF	TAF	CAF	
+49	23N1 SCOMP	PITPNC1	SYBR	Unknown	31.293856				30.917	31.007156	0.25392222	Automatic			Automatic	6.578528													
+50	23N1 SCOMP	PITPNC1	SYBR	Unknown	30.917				30.917	31.007156	0.25392222	Automatic			Automatic	6.578528													
+51	23N1 SCOMP	PITPNC1	SYBR	Unknown	30.810616				30.917	31.007156	0.25392222	Automatic			Automatic	6.578528													
+53	23N2 SCOMP	PITPNC1	SYBR	Unknown	31.244389				31.04108	31.067984	0.16461316	Automatic			Automatic	6.578528							true						
+54	23N2 SCOMP	PITPNC1	SYBR	Unknown	31.04108				31.04108	31.067984	0.16461316	Automatic			Automatic	6.578528													
+55	23N2 SCOMP	PITPNC1	SYBR	Unknown	30.918476				31.04108	31.067984	0.16461316	Automatic			Automatic	6.578528													
+57	35N2 SCOMP	PITPNC1	SYBR	Unknown	32.968723				32.968723	32.878292	0.29746068	Automatic			Automatic	6.578528													
+58	35N2 SCOMP	PITPNC1	SYBR	Unknown	33.120045				32.968723	32.878292	0.29746068	Automatic			Automatic	6.578528													
+59	35N2 SCOMP	PITPNC1	SYBR	Unknown	32.546112				32.968723	32.878292	0.29746068	Automatic			Automatic	6.578528													
+73	N1 SCOMP	PITPNC1	SYBR	Unknown	32.94446				32.56945	32.636265	0.2808159	Automatic			Automatic	6.578528													
+74	N1 SCOMP	PITPNC1	SYBR	Unknown	32.394882				32.56945	32.636265	0.2808159	Automatic			Automatic	6.578528													
+75	N1 SCOMP	PITPNC1	SYBR	Unknown	32.56945				32.56945	32.636265	0.2808159	Automatic			Automatic	6.578528													
+25	N25WGA	PITPNC1	SYBR	Unknown	28.844755				28.586163	28.65551	0.16582869	Automatic			Automatic	6.578528													
+26	N25WGA	PITPNC1	SYBR	Unknown	28.586163				28.586163	28.65551	0.16582869	Automatic			Automatic	6.578528													
+27	N25WGA	PITPNC1	SYBR	Unknown	28.535612				28.586163	28.65551	0.16582869	Automatic			Automatic	6.578528													
+29	N31WGA	PITPNC1	SYBR	Unknown	28.19593				28.19593	28.195936	0.05281639	Automatic			Automatic	6.578528													
+30	N31WGA	PITPNC1	SYBR	Unknown	28.143122				28.19593	28.195936	0.05281639	Automatic			Automatic	6.578528													
+31	N31WGA	PITPNC1	SYBR	Unknown	28.248755				28.19593	28.195936	0.05281639	Automatic			Automatic	6.578528													
+1	N32	PITPNC1	SYBR	Unknown	26.295473				26.321583	26.358635	0.08776643	Automatic			Automatic	6.578528													
+2	N32	PITPNC1	SYBR	Unknown	26.321583				26.321583	26.358635	0.08776643	Automatic			Automatic	6.578528													
+3	N32	PITPNC1	SYBR	Unknown	26.458853				26.321583	26.358635	0.08776643	Automatic			Automatic	6.578528													
+77	N34W CONTROL	PITPNC1	SYBR	Unknown	28.786472				28.782322	28.749903	0.059780985	Automatic			Automatic	6.578528													
+78	N34W CONTROL	PITPNC1	SYBR	Unknown	28.782322				28.782322	28.749903	0.059780985	Automatic			Automatic	6.578528													
+79	N34W CONTROL	PITPNC1	SYBR	Unknown	28.680916				28.782322	28.749903	0.059780985	Automatic			Automatic	6.578528													
+33	N34WGA	PITPNC1	SYBR	Unknown	27.845228				27.845228	27.946356	0.20654915	Automatic			Automatic	6.578528													
+34	N34WGA	PITPNC1	SYBR	Unknown	28.18398				27.845228	27.946356	0.20654915	Automatic			Automatic	6.578528													
+35	N34WGA	PITPNC1	SYBR	Unknown	27.809855				27.845228	27.946356	0.20654915	Automatic			Automatic	6.578528													
+5	N37	PITPNC1	SYBR	Unknown	27.166178				26.96342	27.029345	0.11852609	Automatic			Automatic	6.578528													
+6	N37	PITPNC1	SYBR	Unknown	26.96342				26.96342	27.029345	0.11852609	Automatic			Automatic	6.578528													
+7	N37	PITPNC1	SYBR	Unknown	26.958439				26.96342	27.029345	0.11852609	Automatic			Automatic	6.578528													
+9	N40	PITPNC1	SYBR	Unknown	27.435593				27.435593	27.484255	0.1554244	Automatic			Automatic	6.578528													
+10	N40	PITPNC1	SYBR	Unknown	27.658188				27.435593	27.484255	0.1554244	Automatic			Automatic	6.578528													
+11	N40	PITPNC1	SYBR	Unknown	27.358984				27.435593	27.484255	0.1554244	Automatic			Automatic	6.578528													
+81	NTC	PITPNC1	SYBR	Unknown	Undetermined							Automatic			Automatic	6.578528				true									
+82	NTC	PITPNC1	SYBR	Unknown	Undetermined							Automatic			Automatic	6.578528				true					true				
+Slope		cycles/log decade
+Y-Intercept		
+R^2		
+
+
+
+NAP	LPL
+	

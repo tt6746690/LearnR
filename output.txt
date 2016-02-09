@@ -1,4 +1,0 @@
-function(){
-  print("\nWelcome at", date(), "\n")
-  options(editor="atom")
-}
