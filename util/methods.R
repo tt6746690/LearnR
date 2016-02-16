@@ -67,7 +67,7 @@ process <- function(DT, refGene, tarGene, CONTROL){
   # merged DT
   DT <- merge(refDT, tarDT, by='Sample.Name')
 
-  # trim NaN containing rows
+  # trim NaN containing rows (including NTC)
   oldrow = nrow(DT)
   DT <- DT[refCt != 'NaN' & tarCt != 'NaN',]
   if(oldrow != nrow(DT)){
@@ -81,5 +81,5 @@ process <- function(DT, refGene, tarGene, CONTROL){
   # table containing all revelant info
   DT <- DT[,.(Sample.Name, refCt, tarCt, dCt, ddCt=(dCt-controlCt))][,.(Sample.Name, refCt, tarCt, dCt, ddCt, fold=2^-ddCt)]
 
-  return(DT)
+  return(DT[Sample.Name != CONTROL])  # remove control from the entry
 }

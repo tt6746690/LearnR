@@ -1,41 +1,38 @@
+[1] "12  trimmed to  9  because they have empty Ct"
 [1] "27  trimmed to  26  because they have empty Ct"
-[1] "36  trimmed to  30  because they have empty Ct"
-[1] "33  trimmed to  28  because they have empty Ct"
-[1] "41  trimmed to  40  because they have empty Ct"
-[1] "44  trimmed to  43  because they have empty Ct"
 
 	Welch Two Sample t-test
 
-data:  dcis2v and controlv
-t = -4, df = 50, p-value = 2e-04
+data:  unampv and wgav
+t = -4, df = 20, p-value = 7e-04
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -2.66 -0.89
+ -2.70 -0.85
 sample estimates:
 mean of x mean of y 
-    -1.90     -0.12 
+    -0.98      0.79 
 
 
 	Welch Two Sample t-test
 
-data:  idc1v and controlv
-t = -2, df = 60, p-value = 0.05
+data:  unampv and scompv
+t = -2, df = 10, p-value = 0.1
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -1.781 -0.011
+ -2.8  0.5
 sample estimates:
 mean of x mean of y 
-    -1.02     -0.12 
+    -0.98      0.19 
 
 
 	Welch Two Sample t-test
 
-data:  dcis2v and idc1v
-t = -2, df = 60, p-value = 0.04
+data:  wgav and scompv
+t = 0.9, df = 8, p-value = 0.4
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -1.744 -0.024
+ -1.0  2.2
 sample estimates:
 mean of x mean of y 
-     -1.9      -1.0 
+     0.79      0.19 
 

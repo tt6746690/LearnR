@@ -40,14 +40,15 @@ idc2 <- process(load(f_IDC2), refGene, tarGene, CONTROL)
 #print(data.frame(idc1))
 
 # extract useful columns
-ct <- ct[,.(Sample.Name, ddCt, fold, category='CONTROL')]
+ct <- ct[,.(Sample.Name, ddCt, fold, category='CONTROL')]     # grep("SCOMP", Sample.Name, invert=T)
 dcis1 <- dcis1[,.(Sample.Name, ddCt, fold, category='DCIS1')]
 dcis2 <- dcis2[,.(Sample.Name, ddCt, fold, category='DCIS2')]
 idc1 <- idc1[,.(Sample.Name, ddCt, fold, category='IDC1')]
 idc2 <- idc2[,.(Sample.Name, ddCt, fold, category='IDC2')]
 
 # rbind concat data table with same colnames but different nrow()
-b = rbind(ct, dcis1, dcis2, idc1, idc2)
+# b = rbind(ct, dcis1, dcis2, idc1, idc2)
+b = rbind(ct, dcis2, idc1)
 
 # plot 4 graphs
 #plot4(b)    # dev
@@ -57,26 +58,26 @@ dev.off()   # redirect reseults console
 
 # significance test
 controlv <- b$ddCt[b$category == 'CONTROL']
-dcis1v <- b$ddCt[b$category == 'DCIS1']
+# dcis1v <- b$ddCt[b$category == 'DCIS1']
 dcis2v <- b$ddCt[b$category == 'DCIS2']
 idc1v <- b$ddCt[b$category == 'IDC1']
-idc2v <- b$ddCt[b$category == 'IDC2']
+# idc2v <- b$ddCt[b$category == 'IDC2']
 
 
-dcis1VScontrol <- t.test(dcis1v, controlv)
+# dcis1VScontrol <- t.test(dcis1v, controlv)
 dcis2VScontrol <- t.test(dcis2v, controlv)
 idc1VScontrol <- t.test(idc1v, controlv)
 dcis2VSidc1 <- t.test(dcis2v, idc1v)
-dcis2VSidc2 <- t.test(dcis2v, idc2v)
-dcis1VSidc1 <- t.test(dcis1v, idc1v)
-dcis1VSidc2 <- t.test(dcis1v, idc2v)
+# dcis2VSidc2 <- t.test(dcis2v, idc2v)
+# dcis1VSidc1 <- t.test(dcis1v, idc1v)
+# dcis1VSidc2 <- t.test(dcis1v, idc2v)
 
-print(dcis1VScontrol)
+# print(dcis1VScontrol)
 print(dcis2VScontrol)
 print(idc1VScontrol)
 print(dcis2VSidc1)
-print(dcis2VSidc2)
-print(dcis1VSidc1)
-print(dcis1VSidc2)
+# print(dcis2VSidc2)
+# print(dcis1VSidc1)
+# print(dcis1VSidc2)
 
 sink()      # redirect results to console
