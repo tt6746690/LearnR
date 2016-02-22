@@ -6,7 +6,9 @@ source('./util/methods.R')
 source('./util/multiplot.R')
 
 # setup working directory
-setwd("C:/Users/PeiqiWang/Desktop/LearningR")
+# setwd("C:/Users/PeiqiWang/Desktop/LearningR")
+# source('PITPNC1.R')
+
 
 # options
 options(digits=2)
@@ -49,6 +51,7 @@ idc2 <- idc2[,.(Sample.Name, ddCt, fold, category='IDC2')]
 # rbind concat data table with same colnames but different nrow()
 # b = rbind(ct, dcis1, dcis2, idc1, idc2)
 b = rbind(ct, dcis2, idc1)
+
 
 # plot 4 graphs
 #plot4(b)    # dev

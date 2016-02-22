@@ -3,6 +3,99 @@
 [1] "33  trimmed to  28  because they have empty Ct"
 [1] "41  trimmed to  40  because they have empty Ct"
 [1] "44  trimmed to  43  because they have empty Ct"
+        Sample.Name   ddCt   fold category
+ 1:  26N1 SCOMP SLN -0.451  1.367  CONTROL
+ 2:  27N1 SCOMP SLN -0.965  1.952  CONTROL
+ 3:  33N1 SCOMP SLN  2.623  0.162  CONTROL
+ 4:  33N2 SCOMP SLN  0.802  0.573  CONTROL
+ 5:  35NI SCOMP SLN  0.387  0.765  CONTROL
+ 6:  36N1 SCOMP SLN -2.625  6.169  CONTROL
+ 7:             N27 -0.983  1.977  CONTROL
+ 8:          N27WGA  0.913  0.531  CONTROL
+ 9:             N28 -1.280  2.428  CONTROL
+10:          N28WGA  0.700  0.616  CONTROL
+11:             N29  1.522  0.348  CONTROL
+12:          N29WGA  1.944  0.260  CONTROL
+13:             N30 -2.455  5.482  CONTROL
+14:             N31 -0.850  1.803  CONTROL
+15:          N32WGA  2.064  0.239  CONTROL
+16:             N33 -1.566  2.960  CONTROL
+17:          N33WGA -0.683  1.605  CONTROL
+18:             N34 -2.660  6.320  CONTROL
+19: N34 WGA CONTROL  1.830  0.281  CONTROL
+20:          N34WGA  1.741  0.299  CONTROL
+21:          N35WGA  0.555  0.681  CONTROL
+22:             N36 -2.350  5.097  CONTROL
+23:          N38WGA  0.107  0.928  CONTROL
+24:             N39 -1.637  3.109  CONTROL
+25:          N39WGA  0.236  0.849  CONTROL
+26:            119A -2.248  4.749    DCIS2
+27:           122A3 -1.311  2.481    DCIS2
+28:           124A2 -0.198  1.147    DCIS2
+29:            126A -3.053  8.300    DCIS2
+30:            128A  0.288  0.819    DCIS2
+31:            132A -3.452 10.947    DCIS2
+32:             13A -1.807  3.498    DCIS2
+33:             14A  3.357  0.098    DCIS2
+34:            18A2 -1.613  3.059    DCIS2
+35:             19A -3.524 11.506    DCIS2
+36:             23A -1.124  2.180    DCIS2
+37:             24A -3.706 13.053    DCIS2
+38:             25A -1.114  2.165    DCIS2
+39:             30A -0.554  1.468    DCIS2
+40:             31A -3.379 10.405    DCIS2
+41:             32A -3.176  9.036    DCIS2
+42:             37A -2.178  4.527    DCIS2
+43:             42A -2.375  5.186    DCIS2
+44:            42A3 -2.735  6.656    DCIS2
+45:             59A -2.406  5.301    DCIS2
+46:             61A -2.756  6.757    DCIS2
+47:             67A -1.391  2.622    DCIS2
+48:            72A2 -3.762 13.564    DCIS2
+49:             76A -2.606  6.089    DCIS2
+50:             81A -3.379 10.401    DCIS2
+51:             82A -0.977  1.969    DCIS2
+52: N34 WGA CONTROL -0.191  1.142    DCIS2
+53:            119B -0.893  1.857     IDC1
+54:            121B -1.660  3.160     IDC1
+55:            124B -0.549  1.463     IDC1
+56:             14B  3.659  0.079     IDC1
+57:             15B -2.161  4.472     IDC1
+58:             18B -0.301  1.232     IDC1
+59:            18B1 -0.714  1.640     IDC1
+60:              1B -3.415 10.667     IDC1
+61:             20B -1.300  2.463     IDC1
+62:            20B1 -0.888  1.850     IDC1
+63:             22B  0.499  0.708     IDC1
+64:             27B -0.907  1.875     IDC1
+65:             30B -1.659  3.159     IDC1
+66:             31B -1.760  3.388     IDC1
+67:             33B -3.104  8.598     IDC1
+68:             35B  0.231  0.852     IDC1
+69:             37B -2.232  4.699     IDC1
+70:            40B1 -2.429  5.384     IDC1
+71:            40B2 -2.719  6.586     IDC1
+72:             41B  2.536  0.172     IDC1
+73:            41B1 -3.889 14.816     IDC1
+74:             42B -2.931  7.626     IDC1
+75:            42B1 -1.924  3.796     IDC1
+76:            44B2 -0.076  1.054     IDC1
+77:             63B -0.608  1.524     IDC1
+78:             64B  0.889  0.540     IDC1
+79:             67B -1.181  2.267     IDC1
+80:             68B -3.132  8.765     IDC1
+81:             71B -2.701  6.503     IDC1
+82:             72B -3.167  8.984     IDC1
+83:             74B -3.489 11.225     IDC1
+84:             75B -2.918  7.556     IDC1
+85:             76B -0.771  1.707     IDC1
+86:              7B  1.706  0.307     IDC1
+87:             81B -1.924  3.796     IDC1
+88:             82B -0.583  1.498     IDC1
+89:             84B  2.589  0.166     IDC1
+90:            84B1  1.886  0.271     IDC1
+91:         N34 WGA  2.259  0.209     IDC1
+        Sample.Name   ddCt   fold category
 
 	Welch Two Sample t-test
 
