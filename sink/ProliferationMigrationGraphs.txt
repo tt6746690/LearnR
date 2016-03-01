@@ -1,0 +1,8 @@
+   Sample.Name refCt tarCt   dCt    ddCt  fold
+1:  mcf10A pit 17.34 28.71 11.37 -0.1287 1.093
+   Sample.Name refCt tarCt   dCt    ddCt  fold
+1:  mcf10A pit 17.34 28.77 11.43 -0.2067 1.154
+   Sample.Name refCt tarCt   dCt    ddCt fold
+1:  mcf10A pit 17.34 27.69 10.35 -0.1766 1.13
+   Sample.Name refCt tarCt   dCt    ddCt  fold
+1:  mcf10A pit 17.34  25.7 8.358 -0.2544 1.193

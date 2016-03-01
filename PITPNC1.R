@@ -6,12 +6,12 @@ source('./util/methods.R')
 source('./util/multiplot.R')
 
 # setup working directory
-# setwd("C:/Users/PeiqiWang/Desktop/LearningR")
+# setwd("C:/Users/PeiqiWang/Documents/GitHub/LearningR")
 # source('PITPNC1.R')
 
 
 # options
-options(digits=2)
+options(digits=3)
 
 # const
 refGene = 'B2m'
@@ -52,9 +52,17 @@ idc2 <- idc2[,.(Sample.Name, ddCt, fold, category='IDC2')]
 # b = rbind(ct, dcis1, dcis2, idc1, idc2)
 b = rbind(ct, dcis2, idc1)
 
+print(summary(dcis2$fold))
+dcis2$fold <- idc1$fold
+error <- qt(0.975,df=length(dcis2$fold)-1)*sd(dcis2$fold)/sqrt(length(dcis2$fold))
+left <- mean(dcis2$fold)-error
+right <- mean(dcis2$fold)+error
+print(left)
+print(right)
+
 
 # plot 4 graphs
-#plot4(b)    # dev
+# plot4(b)    # dev
 plotEach(b) # prod
 
 dev.off()   # redirect reseults console

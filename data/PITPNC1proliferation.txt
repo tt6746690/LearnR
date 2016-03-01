@@ -1,0 +1,15 @@
+id	category	date	counts	cellline	
+1	control	day0	250	231	
+2	control	day0	250	231	
+3	control	day0	250	231	
+4	control	day0	250	231	
+1	control	day3	400	231	
+2	control	day3	400	231	
+3	control	day3	600	231	
+4	control	day3	400	231	
+5	PITPNC1	day0	250	231	
+6	PITPNC1	day0	250	231	
+7	PITPNC1	day0	250	231	
+5	PITPNC1	day3	960	231	
+6	PITPNC1	day3	800	231	
+7	PITPNC1	day3	760	231	

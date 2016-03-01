@@ -6,8 +6,8 @@ source('./util/methods.R')
 source('./util/multiplot.R')
 
 # setup working directory
-# setwd("C:/Users/PeiqiWang/Desktop/LearningR")
-# source('controlComparison.R')
+# setwd("C:/Users/PeiqiWang/Documents/GitHub/LearningR")
+# source('PITPNC1.R')
 
 # options
 options(digits=2)
@@ -23,6 +23,7 @@ ct2 = './data/2016-02-05 CONTROL.txt'
 
 # sinks
 pdf("./sink/controlComparison2.pdf")
+
 sink("./sink/controlComparison2.txt")
 
 # load the data sheet
