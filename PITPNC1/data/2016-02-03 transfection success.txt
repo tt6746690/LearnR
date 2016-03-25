@@ -1,0 +1,13 @@
+Well	Sample Name	Detector Name	Reporter	Task	Ct
+317	231 con oe	gapdh	SYBR	Unknown	16.94988
+318	231 con oe	gapdh	SYBR	Unknown	17.16765
+319	231 con oe	gapdh	SYBR	Unknown	16.98377
+321	231 pit 2	gapdh	SYBR	Unknown	18.50043
+322	231 pit 2	gapdh	SYBR	Unknown	18.94789
+323	231 pit 2	gapdh	SYBR	Unknown	18.48745	
+365	231 con oe	PITPNC1	SYBR	Unknown	25.72923
+366	231 con oe	PITPNC1	SYBR	Unknown	25.65814
+367	231 con oe	PITPNC1	SYBR	Unknown	25.74639
+369	231 pit 2	PITPNC1	SYBR	Unknown	24.61184
+370	231 pit 2	PITPNC1	SYBR	Unknown	24.40082
+371	231 pit 2	PITPNC1	SYBR	Unknown	24.36297

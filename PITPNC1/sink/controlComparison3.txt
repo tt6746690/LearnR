@@ -1,0 +1,74 @@
+[1] "12  trimmed to  9  because they have empty Ct"
+[1] "27  trimmed to  26  because they have empty Ct"
+        Sample.Name  ddCt  fold
+ 1:      35N2 SCOMP    NA    NA
+ 2:        N1 SCOMP    NA    NA
+ 3:          N25WGA    NA    NA
+ 4:          N31WGA    NA    NA
+ 5:             N32    NA    NA
+ 6:    N34W CONTROL    NA    NA
+ 7:          N34WGA    NA    NA
+ 8:             N37    NA    NA
+ 9:             N40    NA    NA
+10:  26N1 SCOMP SLN  0.83 0.563
+11:  27N1 SCOMP SLN  0.31 0.804
+12:  33N1 SCOMP SLN  3.90 0.067
+13:  33N2 SCOMP SLN  2.08 0.236
+14:  35NI SCOMP SLN  1.67 0.315
+15:  36N1 SCOMP SLN -1.35 2.541
+16:        N1 SCOMP  1.28 0.412
+17:             N27  0.30 0.814
+18:          N27WGA  2.19 0.219
+19:          N28WGA  1.98 0.253
+20:             N29  2.80 0.143
+21:          N29WGA  3.22 0.107
+22:             N30 -1.18 2.258
+23:             N31  0.43 0.742
+24:          N32WGA  3.34 0.098
+25:             N33 -0.29 1.219
+26:          N33WGA  0.60 0.661
+27:             N34 -1.38 2.603
+28: N34 WGA CONTROL  3.11 0.116
+29:          N34WGA  3.02 0.123
+30:          N35WGA  1.83 0.280
+31:             N36 -1.07 2.099
+32:          N38WGA  1.39 0.382
+33:             N39 -0.36 1.281
+34:          N39WGA  1.52 0.350
+        Sample.Name  ddCt  fold
+
+	Welch Two Sample t-test
+
+data:  unampv and wgav
+t = -4, df = 10, p-value = 0.001
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.5 -1.1
+sample estimates:
+mean of x mean of y 
+   -0.093     2.221 
+
+
+	Welch Two Sample t-test
+
+data:  unampv and scompv
+t = -2, df = 10, p-value = 0.1
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.03  0.35
+sample estimates:
+mean of x mean of y 
+   -0.093     1.247 
+
+
+	Welch Two Sample t-test
+
+data:  wgav and scompv
+t = 1, df = 9, p-value = 0.2
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.57  2.51
+sample estimates:
+mean of x mean of y 
+      2.2       1.2 
+

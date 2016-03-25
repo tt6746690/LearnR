@@ -5,7 +5,7 @@ source('./util/methods.R')
 source('./util/multiplot.R')
 
 # setup working directory
-# setwd("C:/Users/PeiqiWang/Documents/GitHub/LearningR")
+# setwd("C:/Users/PeiqiWang/Documents/GitHub/LearningR/PITPNC1")
 # source('ProliferationMigrationGraphs.R')
 
 

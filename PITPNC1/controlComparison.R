@@ -6,8 +6,8 @@ source('./util/methods.R')
 source('./util/multiplot.R')
 
 # setup working directory
-# setwd("C:/Users/PeiqiWang/Documents/GitHub/LearningR")
-# source('PITPNC1.R')
+# setwd("C:/Users/PeiqiWang/Documents/GitHub/LearningR/PITPNC1")
+# source('controlComparison.R')
 
 # options
 options(digits=2)
@@ -22,9 +22,8 @@ ct1 = './data/2016 02 04 CONTROLS 3 3WGA 3SCOMP.txt'
 ct2 = './data/2016-02-05 CONTROL.txt'
 
 # sinks
-pdf("./sink/controlComparison2.pdf")
-
-sink("./sink/controlComparison2.txt")
+pdf("./sink/controlComparison3.pdf")
+sink("./sink/controlComparison3.txt")
 
 # load the data sheet
 ct1 <- process(load(ct1), refGene, tarGene, CONTROL)
@@ -43,7 +42,7 @@ scomp <- DT[grep('SCOMP', Sample.Name),.(Sample.Name, ddCt, fold, category = 'SC
 unamp <- DT[grep('WGA|SCOMP|W', Sample.Name, invert = T),.(Sample.Name, ddCt, fold, category = 'UNAMP')]
 
 # combine data again
-DT <- rbind(wga, scomp, unamp)
+DT <- rbind(unamp, scomp, wga)
 
 # t test
 wgav <- DT$ddCt[DT$category == 'WGA']
@@ -55,24 +54,17 @@ print(t.test(unampv, scompv))
 print(t.test(wgav, scompv))
 
 # plots
-cbPalette <- c("#d5a4df", "#97e2a5", "#9ac3e9")
-print(ggplot(DT, aes(x=category, y=fold, fill=category, colour=category)) + geom_boxplot() +  geom_point() +
-scale_fill_manual(values=cbPalette) +
-theme(plot.title = element_text(size = rel(1.5))) +
-theme(axis.title.y = element_text(size = rel(1.5), angle = 90)) +
+print(ggplot(DT, aes(x=category, y=fold)) + geom_boxplot() +  scale_fill_grey() +
+scale_colour_gradient(low = "gray", high = "black") + geom_point(aes(color = fold)) +
+theme(plot.title = element_text(size = rel(1.0))) +
+theme(plot.title = element_text(vjust=1)) +
+theme(axis.title.y = element_text(size = 20, angle = 90, family = "Helvetica", color="#666666", hjust=0.5)) +
+theme(axis.text.x = element_text(size = 18, angle = 0, family = "Helvetica", color="#666666", vjust=0.5, hjust=0.5)) +
 theme(axis.title.x = element_blank()) +
 theme(legend.position = "none") +
-geom_jitter(shape=16, position=position_jitter(0.2)) + ylim(0,3) +
-ggtitle('Normal Patient Cells with Varying Amplification Methods'))
-
-print(ggplot(DT, aes(x=category, y=ddCt, fill=category, colour=category)) + geom_boxplot() + geom_boxplot() +  geom_point() +
-scale_fill_manual(values=cbPalette) +
-theme(plot.title = element_text(size = rel(1.5))) +
-theme(axis.title.y = element_text(size = rel(1.5), angle = 90)) +
-theme(axis.title.x = element_blank()) +
-theme(legend.position = "none") +
-geom_jitter(shape=16, position=position_jitter(0.2)) + ylim(-3, 4) +
-ggtitle('Normal Patient Cells with Varying Amplification Methods'))
+theme(plot.margin = unit(c(1,1,1,1), "cm")) +
+scale_x_discrete(labels = c("SCOMP", "Unamplified", "WGA")) +
+scale_y_continuous("Relative Fold Difference\n", breaks = c(0, 1, 2, 3, 4)))
 
 dev.off()   # redirect reseults console
 sink()
