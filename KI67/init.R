@@ -9,11 +9,13 @@ options(digits=3)
 # CONST
 path_TMA5 = "C:/Users/PeiqiWang/Documents/GitHub/LearningR/KI67/data/2016_03_24 TMA5.txt"
 
-DT <- data.frame(read.table(path_TMA5, header=TRUE, sep = "\t",
-                 na.strings=c("NA", "Undetermined", "")))
+df <- data.frame(read.table(path_TMA5, header=TRUE, sep = "\t",
+                 na.strings=c("NA", "Undetermined", ""), stringsAsFactors=FALSE))
 
 
-print(str(DT))
+l <- strsplit(trimws(df[, 'Slide.name']), "-")
+df <- do.call(rbind.data.frame, l)
+print(class(df))
 
 
 
