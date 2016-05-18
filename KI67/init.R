@@ -9,8 +9,8 @@ source('./util/methods.R')
 # source('init.R')
 
 # sinks
-pdf("./sink/TMA5_manualVSdefiniens.pdf")
-sink("./sink/TMA5_manualVSdefiniens.txt")
+pdf("./sink/TMA5_manualVSdefiniens_withoutlier.pdf")
+sink("./sink/TMA5_manualVSdefiniens_withoutlier.txt")
 
 options(digits=3)
 
@@ -29,7 +29,7 @@ setkey(ManScoringDT, case)
 # Perform inner join, eliminating not matched rows from Right
 rDT <- ManScoringDT[D_TMA5_DT, nomatch=0]
 
-rDT <- rDT[(zeroPositive < 21) & (i.zeroPositive < 21)]
+# rDT <- rDT[(zeroPositive < 21) & (i.zeroPositive < 21)]
 
 print(rDT)
 # QQplot to see if difference is normally distributed
