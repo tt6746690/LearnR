@@ -1,0 +1,6 @@
+ls
+a = c(1,2,3)
+a
+setwd("/Users/markwang/github/LearnR/mikko")
+source("init.R")
+source("init.R")

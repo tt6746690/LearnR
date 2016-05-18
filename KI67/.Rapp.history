@@ -1,0 +1,9 @@
+ls
+a = c(1,2,3)
+a
+setwd("/Users/markwang/github/LearnR/KI67#
+")
+setwd("/Users/markwang/github/LearnR/KI67")
+source('init.R')
+library('ggplot2')
+install.packages("ggplot2")
