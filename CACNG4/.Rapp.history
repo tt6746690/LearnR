@@ -1,0 +1,26 @@
+ls
+a = c(1,2,3)
+a
+ls()
+source('init.R')
+source('init.R')
+source('init.R')
+source('init.R')
+test
+summary(test)
+colnames(test)
+source('init.R')
+source('init.R')
+source('init.R')
+print(clinical)
+summary(clinical)
+test <- read.table(file.path(getwd(), 'data', 'test.txt'), as.is = TRUE, sep = "\t", header = TRUE)#
+print(test)
+nrow(clinical)
+source('init.R')
+source('init.R')
+source('init.R')
+source('init.R')
+source('init.R')
+install.packages(survival)
+install.packages('survival')
