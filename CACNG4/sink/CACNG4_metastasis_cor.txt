@@ -1,551 +1,116 @@
-[1] "a list of cancer stufies"
-                     cancer_study_id
-1                      paac_jhu_2014
-2                      laml_tcga_pub
-3                          laml_tcga
-4                         acyc_mskcc
-5                           acc_tcga
-6              blca_mskcc_solit_2014
-7              blca_mskcc_solit_2012
-8      blca_mskcc_signet_ring_impact
-9       blca_plasmacytoid_mskcc_2016
-10                          blca_bgi
-11           blca_dfarber_mskcc_2014
-12                     blca_tcga_pub
-13                         blca_tcga
-14                          lgg_tcga
-15                        brca_bccrc
-16                        brca_broad
-17                       brca_sanger
-18                 brca_tcga_pub2015
-19                     brca_tcga_pub
-20                         brca_tcga
-21         brca_bccrc_xenograft_2014
-22               cellline_ccle_broad
-23                         cesc_tcga
-24                    chol_nccs_2013
-25                     chol_nus_2012
-26                         chol_tcga
-27                 ccrcc_utokyo_2013
-28                coadread_genentech
-29                 coadread_tcga_pub
-30                     coadread_tcga
-31                    coadread_mskcc
-32                 cscc_dfarber_2015
-33                   desm_broad_2015
-34                        esca_broad
-35                         esca_tcga
-36                         escc_icgc
-37                    escc_ucla_2014
-38                   es_iocurie_2014
-39                 gbc_shanghai_2014
-40                   egc_tmucih_2015
-41                  gbm_tcga_pub2013
-42                      gbm_tcga_pub
-43                          gbm_tcga
-44                        hnsc_broad
-45                          hnsc_jhu
-46                     hnsc_tcga_pub
-47                         hnsc_tcga
-48                   all_stjude_2015
-49                     chol_jhu_2013
-50                     kich_tcga_pub
-51                         kich_tcga
-52                          kirc_bgi
-53                     kirc_tcga_pub
-54                         kirc_tcga
-55                         kirp_tcga
-56                      lihc_amc_prv
-57                        lihc_riken
-58                         lihc_tcga
-59                     lgg_ucsf_2014
-60                        luad_broad
-61                   luad_mskcc_2015
-62                     luad_tcga_pub
-63                         luad_tcga
-64                          luad_tsp
-65                     lusc_tcga_pub
-66                         lusc_tcga
-67                         dlbc_tcga
-68                       mpnst_mskcc
-69                    mbl_broad_2012
-70                          mbl_icgc
-71                          mbl_pcgp
-72                skcm_broad_dfarber
-73                   lgggbm_tcga_pub
-74                         meso_tcga
-75                    prad_su2c_2015
-76                          mm_broad
-77                    ccrcc_irc_2014
-78                    cellline_nci60
-79                   npc_nusingapore
-80                      nbl_amc_2012
-81                          nepc_wcm
-82                       ov_tcga_pub
-83                           ov_tcga
-84                         paad_icgc
-85                         paad_tcga
-86                    paad_utsw_2015
-87                    panet_jhu_2011
-88                     thca_tcga_pub
-89             es_dfarber_broad_2014
-90                         pcpg_tcga
-91                thyroid_mskcc_2016
-92                   pcnsl_mayo_2015
-93                   prad_broad_2013
-94                        prad_broad
-95                        prad_mskcc
-96                        prad_fhcrc
-97                     prad_tcga_pub
-98                         prad_tcga
-99                   prad_mskcc_2014
-100 prad_mskcc_cheny1_organoids_2014
-101                        prad_mich
-102            nccrcc_genentech_2014
-103                     rms_nih_2014
-104                       sarc_mskcc
-105                        sarc_tcga
-106                       skcm_broad
-107                        skcm_tcga
-108                        skcm_yale
-109                       scco_mskcc
-110                       sclc_clcgp
-111                         sclc_jhu
-112               sclc_ucologne_2015
-113            stad_pfizer_uhongkong
-114                    stad_tcga_pub
-115                        stad_tcga
-116                      stad_utokyo
-117                   stad_uhongkong
-118                        tgct_tcga
-119                     tet_nci_2014
-120                        thym_tcga
-121                        thca_tcga
-122                     ucs_jhu_2014
-123                         ucs_tcga
-124                        ucec_tcga
-125                    ucec_tcga_pub
-126                         uvm_tcga
-                                                                                    name
-1                   Acinar Cell Carcinoma of the Pancreas (Johns Hopkins, J Pathol 2014)
-2                                               Acute Myeloid Leukemia (TCGA, NEJM 2013)
-3                                             Acute Myeloid Leukemia (TCGA, Provisional)
-4                                       Adenoid Cystic Carcinoma (MSKCC, Nat Genet 2013)
-5                                           Adrenocortical Carcinoma (TCGA, Provisional)
-6                                                  Bladder Cancer (MSKCC, Eur Urol 2014)
-7                                              Bladder Cancer (MSKCC, J Clin Oncol 2013)
-8                           Bladder Cancer, Plasmacytoid Variant (MSKCC, Nat Genet 2016)
-9                           Bladder Cancer, Plasmacytoid Variant (MSKCC, Nat Genet 2016)
-10                                    Bladder Urothelial Carcinoma (BGI, Nat Genet 2013)
-11             Bladder Urothelial Carcinoma (Dana Farber & MSKCC, Cancer Discovery 2014)
-12                                      Bladder Urothelial Carcinoma (TCGA, Nature 2014)
-13                                      Bladder Urothelial Carcinoma (TCGA, Provisional)
-14                                          Brain Lower Grade Glioma (TCGA, Provisional)
-15                             Breast Invasive Carcinoma (British Columbia, Nature 2012)
-16                                        Breast Invasive Carcinoma (Broad, Nature 2012)
-17                                       Breast Invasive Carcinoma (Sanger, Nature 2012)
-18                                           Breast Invasive Carcinoma (TCGA, Cell 2015)
-19                                         Breast Invasive Carcinoma (TCGA, Nature 2012)
-20                                         Breast Invasive Carcinoma (TCGA, Provisional)
-21                      Breast cancer patient xenografts (British Columbia, Nature 2014)
-22                           Cancer Cell Line Encyclopedia (Novartis/Broad, Nature 2012)
-23  Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma (TCGA, Provisional)
-24              Cholangiocarcinoma (National Cancer Centre of Singapore, Nat Genet 2013)
-25                 Cholangiocarcinoma (National University of Singapore, Nat Genet 2012)
-26                                                Cholangiocarcinoma (TCGA, Provisional)
-27                             Clear Cell Renal Cell Carcinoma (U Tokyo, Nat Genet 2013)
-28                                    Colorectal Adenocarcinoma (Genentech, Nature 2012)
-29                                         Colorectal Adenocarcinoma (TCGA, Nature 2012)
-30                                         Colorectal Adenocarcinoma (TCGA, Provisional)
-31                       Colorectal Adenocarcinoma Triplets (MSKCC, Genome Biology 2014)
-32                        Cutaneous squamous cell carcinoma (DFCI, Clin Cancer Res 2015)
-33                               Desmoplastic Melanoma (Broad Institute, Nat Genet 2015)
-34                                     Esophageal Adenocarcinoma (Broad, Nat Genet 2013)
-35                                              Esophageal Carcinoma (TCGA, Provisional)
-36                                Esophageal Squamous Cell Carcinoma (ICGC, Nature 2014)
-37                             Esophageal Squamous Cell Carcinoma (UCLA, Nat Genet 2014)
-38                                    Ewing Sarcoma (Institut Cuire, Cancer Discov 2014)
-39                                      Gallbladder Carcinoma (Shanghai, Nat Genet 2014)
-40                                            Gastric Adenocarcinoma (TMUCIH, PNAS 2015)
-41                                                        Glioblastoma (TCGA, Cell 2013)
-42                                                      Glioblastoma (TCGA, Nature 2008)
-43                                           Glioblastoma Multiforme (TCGA, Provisional)
-44                           Head and Neck Squamous Cell Carcinoma (Broad, Science 2011)
-45                   Head and Neck Squamous Cell Carcinoma (Johns Hopkins, Science 2011)
-46                             Head and Neck Squamous Cell Carcinoma (TCGA, Nature 2015)
-47                             Head and Neck Squamous Cell Carcinoma (TCGA, Provisional)
-48          Infant MLL-Rearranged Acute Lymphoblastic Leukemia (St Jude, Nat Genet 2015)
-49            Intrahepatic Cholangiocarcinoma (Johns Hopkins University, Nat Genet 2013)
-50                                           Kidney Chromophobe (TCGA, Cancer Cell 2014)
-51                                                Kidney Chromophobe (TCGA, Provisional)
-52                               Kidney Renal Clear Cell Carcinoma (BGI, Nat Genet 2012)
-53                                 Kidney Renal Clear Cell Carcinoma (TCGA, Nature 2013)
-54                                 Kidney Renal Clear Cell Carcinoma (TCGA, Provisional)
-55                             Kidney Renal Papillary Cell Carcinoma (TCGA, Provisional)
-56                                 Liver Hepatocellular Carcinoma (AMC, Hepatology 2014)
-57                                Liver Hepatocellular Carcinoma (RIKEN, Nat Genet 2012)
-58                                    Liver Hepatocellular Carcinoma (TCGA, Provisional)
-59                                                Low-Grade Gliomas (UCSF, Science 2014)
-60                                                Lung Adenocarcinoma (Broad, Cell 2012)
-61                                                      Lung Adenocarcinoma (MSKCC 2015)
-62                                               Lung Adenocarcinoma (TCGA, Nature 2014)
-63                                               Lung Adenocarcinoma (TCGA, Provisional)
-64                                                Lung Adenocarcinoma (TSP, Nature 2008)
-65                                      Lung Squamous Cell Carcinoma (TCGA, Nature 2012)
-66                                      Lung Squamous Cell Carcinoma (TCGA, Provisional)
-67                   Lymphoid Neoplasm Diffuse Large B-cell Lymphoma (TCGA, Provisional)
-68                       Malignant Peripheral Nerve Sheath Tumor (MSKCC, Nat Genet 2014)
-69                                                  Medulloblastoma (Broad, Nature 2012)
-70                                                   Medulloblastoma (ICGC, Nature 2012)
-71                                                   Medulloblastoma (PCGP, Nature 2012)
-72                                             Melanoma (Broad/Dana Farber, Nature 2012)
-73                                             Merged Cohort of LGG and GBM (TCGA, 2016)
-74                                                      Mesothelioma (TCGA, Provisional)
-75          Metastatic Prostate Cancer, SU2C/PCF Dream Team (Robinson et al., Cell 2015)
-76                                            Multiple Myeloma (Broad, Cancer Cell 2014)
-77       Multiregion Sequencing of Clear Cell Renal Cell Carcinoma (IRC, Nat Genet 2014)
-78                                             NCI-60 Cell Lines (NCI, Cancer Res. 2012)
-79                                  Nasopharyngeal Carcinoma (Singapore, Nat Genet 2014)
-80                                            Neuroblastoma (AMC Amsterdam, Nature 2012)
-81                            Neuroendocrine Prostate Cancer (Trento/Cornell/Broad 2016)
-82                                 Ovarian Serous Cystadenocarcinoma (TCGA, Nature 2011)
-83                                 Ovarian Serous Cystadenocarcinoma (TCGA, Provisional)
-84                                         Pancreatic Adenocarcinoma (ICGC, Nature 2012)
-85                                         Pancreatic Adenocarcinoma (TCGA, Provisional)
-86                                             Pancreatic Cancer (UTSW, Nat Commun 2015)
-87             Pancreatic Neuroendocrine Tumors (Johns Hopkins University, Science 2011)
-88                                         Papillary Thyroid Carcinoma (TCGA, Cell 2014)
-89                                    Pediatric Ewing Sarcoma (DFCI, Cancer Discov 2014)
-90                                Pheochromocytoma and Paraganglioma (TCGA, Provisional)
-91                Poorly-Differentiated and Anaplastic Thyroid Cancers (MSKCC, JCI 2016)
-92           Primary Central Nervous System Lymphoma (Mayo Clinic, Clin Cancer Res 2015)
-93                                    Prostate Adenocarcinoma (Broad/Cornell, Cell 2013)
-94                               Prostate Adenocarcinoma (Broad/Cornell, Nat Genet 2012)
-95                                     Prostate Adenocarcinoma (MSKCC, Cancer Cell 2010)
-96                             Prostate Adenocarcinoma (Nelson Lab, Fred Hutchinson CRC)
-97                                             Prostate Adenocarcinoma (TCGA, Cell 2015)
-98                                           Prostate Adenocarcinoma (TCGA, Provisional)
-99                                  Prostate Adenocarcinoma CNA study (MSKCC, PNAS 2014)
-100                                 Prostate Adenocarcinoma Organoids (MSKCC, Cell 2014)
-101                          Prostate Adenocarcinoma, Metastatic (Michigan, Nature 2012)
-102                           Renal Non-Clear Cell Carcinoma (Genentech, Nat Genet 2014)
-103                                           Rhabdomyosarcoma (NIH, Cancer Discov 2014)
-104                                                Sarcoma (MSKCC/Broad, Nat Genet 2010)
-105                                                          Sarcoma (TCGA, Provisional)
-106                                           Skin Cutaneous Melanoma (Broad, Cell 2012)
-107                                          Skin Cutaneous Melanoma (TCGA, Provisional)
-108                                       Skin Cutaneous Melanoma (Yale, Nat Genet 2012)
-109                            Small Cell Carcinoma of the Ovary (MSKCC, Nat Genet 2014)
-110                                       Small Cell Lung Cancer (CLCGP, Nat Genet 2012)
-111                               Small Cell Lung Cancer (Johns Hopkins, Nat Genet 2012)
-112                                      Small Cell Lung Cancer (U Cologne, Nature 2015)
-113                              Stomach Adenocarcinoma (Pfizer and UHK, Nat Genet 2014)
-114                                           Stomach Adenocarcinoma (TCGA, Nature 2014)
-115                                           Stomach Adenocarcinoma (TCGA, Provisional)
-116                                     Stomach Adenocarcinoma (U Tokyo, Nat Genet 2014)
-117                                         Stomach Adenocarcinoma (UHK, Nat Genet 2011)
-118                                      Testicular Germ Cell Cancer (TCGA, Provisional)
-119                                       Thymic Epithelial Tumors (NCI, Nat Genet 2014)
-120                                                          Thymoma (TCGA, Provisional)
-121                                                Thyroid Carcinoma (TCGA, Provisional)
-122                   Uterine Carcinosarcoma (Johns Hopkins University, Nat Commun 2014)
-123                                           Uterine Carcinosarcoma (TCGA, Provisional)
-124                             Uterine Corpus Endometrial Carcinoma (TCGA, Provisional)
-125                            Uterine Corpus Endometrioid Carcinoma (TCGA, Nature 2013)
-126                                                   Uveal Melanoma (TCGA, Provisional)
-                                                                                                                                                                                                                                                                                                                                    description
-1                                                                                                                                                                                                                        Mutation data from whole exome sequencing of 23 surgically resected pancreatic carcinomas with acinar differentiation.
-2                                                                                                                                 TCGA Acute Myeloid Leukemia, analysis of 200 adult cases; raw data at the <A HREF="https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=LAML&diseaseName=Acute%20Myeloid%20Leukemia">NCI</A>.
-3                                                                                                                                                                                                                                                TCGA Acute Myeloid Leukemia; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-4                                                                                                                                                                                                                                                                                       Exome profiling of 60 adenoid cystic carcinoma samples.
-5                                                                                                                                                                                                                                              TCGA Adrenocortical Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-6                                                                                                                                                                      Genomic Predictors of Survival in Patients with High-grade Urothelial Carcinoma of the Bladder. Targeted sequencing of 109 tumor samples (MSKCC, European Urology 2014).
-7                                                                                                                                                                                                            Comprehensive profiling of 97 bladder cancer samples, including targeted sequencing of 15 cancer genes. Iyer et al., JCO in press.
-8                                                                                                                                                                                                                                             Genomic profiling of plasmacytoid-variant (signet ring cell) tumors of the bladder, published set
-9                                                                                                                                                                                                                                             Genomic profiling of plasmacytoid-variant (signet ring cell) tumors of the bladder, published set
-10                                                                                                                                                                                                                                                            Exome and whole-genome sequencing of 99 bladder cancer samples. Generated by BGI.
-11                                                                                                                                                                                                                                                              Whole exome sequencing of 50 patients with muscle invasive urothelial carcinoma
-12                                                                                                                                                                                                                                                                            TCGA Bladder Cancer, containing 131 samples; raw data at the NCI.
-13                                                                                                                                                                                                                                         TCGA Bladder Urothelial Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-14                                                                                                                                                                                                                                             TCGA Brain Lower Grade Glioma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-15                                                                                                                                                                                                                               Comprehensive profiling of 65 breast cancer samples. Generated by the British Columbia Cancer Research Centre.
-16                                                                                                                                                                                                                                                      Comprehensive profiling of 103 breast cancer samples. Generated by the Broad Institute.
-17                                                                                                                                                                                                                                                     Comprehensive profiling of 100 breast cancer samples. Generated by the Sanger Institute.
-18                                                                                                                                                                                                    <a href="http://cancergenome.nih.gov/">The Cancer Genome Atlas (TCGA)</a> Breast Invasive Carcinoma project. 1002 cases (TCGA Cell 2015).
-19                                                                                   <a href="http://cancergenome.nih.gov/">The Cancer Genome Atlas (TCGA)</a> Breast Invasive Carcinoma project. 825 cases.<br><i>Nature 2012.</i> <a href="https://tcga-data.nci.nih.gov/docs/publications/brca_2012/">Raw data via the TCGA Data Portal</a>.
-20                                                                                                                                                                                                                                            TCGA Breast Invasive Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-21                                                                                                                                                                                                                                                                              Dynamics of genomic clones in breast cancer patient xenografts.
-22                                                                                                                            Cancer Cell Line Encyclopedia from the Broad Institute and Novartis, containing 883 samples; raw data at the <A HREF="http://www.broadinstitute.org/ccle/data/browseData?conversationPropagation=begin">CCLE</A>.
-23                                                                                                                                                                                                     TCGA Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-24                                                                                                                                                                                                                 Exome sequencing of 15 cholangiocarcinoma cases from the National Cancer Centre of Singapore to study the somatic mutations.
-25                                                                                                                                                                                                            Exome Sequencing for Opisthorchis viverrini-related cholangiocarcinoma in 8 O.viverrini-related tumors and matched normal tissue.
-26                                      TCGA Cholangiocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>. <font color="red">This study under moratorium until 11/28/2016.</font>  Please adhere to <a href="http://cancergenome.nih.gov/abouttcga/policies/publicationguidelines">the TCGA publication guidelines.</a>
-27                                                                                                                                                                                                                                Mutation data from whole genome and/or whole exome sequencing of 106 clear-cell renal cell carcinoma samples.
-28                                                                                                                                                                                                                                                                  Comprehensive profiling of 72 colon cancer samples. Generated by Genentech.
-29                                                                                                 <a href="http://cancergenome.nih.gov/">The Cancer Genome Atlas (TCGA)</a> Colorectal Cancer project. <br><i>Nature 2012.</i> <a href="https://tcga-data.nci.nih.gov/docs/publications/coadread_2012/">Raw data via the TCGA Data Portal</a>.
-30                                                                                                                                                                                                                                            TCGA Colorectal Adenocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-31                                                                                                                                                                                             Colon Trios data from 69 Patients each with a  primary and metastatic tumor. (Primary / Met) (David Solit / Evi Vakiani / Michael Berger, MSKCC)
-32                                                                                                                                                                                                                                           Targeted sequencing of 504 cancer-associated genes in 29 cutaneous squamous cell carcinoma samples
-33                                                                                                                                                                                                                                                          Mutation data from Exome/Whole Genome sequencing of 20 desmoplastic melanoma cases.
-34                                                                                                                                                                                                                                                   Comprehensive profiling of 149 esophageal adenocarcinoma samples from the Broad Institute.
-35                                                                                                                                                                                                                                                TCGA Esophageal Carcinoma ; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-36                                                                                                                                                                                                                                                             WGS and WES of 88 esophageal squamous cell carcinoma samples. Generated by ICGC.
-37                                                                                                                                                                                                                    Whole exome sequencing (WXS) or targeted deep sequencing (TDS) of 139 paired esophageal squamous cell carcinoma patients.
-38                                                                                                                                                            Mutation data from whole-genome sequencing of 112 Ewing sarcoma samples and matched germ line DNA. <a href="http://cancerdiscovery.aacrjournals.org/content/4/11/1342/suppl/DC1">
-39                                                                                                                                                                                                                                             Mutation data from whole exome sequencing of 32 gallbladder carcinoma tumors with paired normals
-40                                                                                                                                                                                                                                          Whole-exome sequencing on 78 Gastric Adenocarcinoma of differing histologies and anatomic locations
-41                                                                                                                                                      <a href="http://cancergenome.nih.gov/">The Cancer Genome Atlas (TCGA)</a> Glioblastoma project.<br> <a href="http://tcga-data.nci.nih.gov/tcga/">Raw data via the TCGA Data Portal</a>.
-42                                                                                             <a href="http://cancergenome.nih.gov/">The Cancer Genome Atlas (TCGA)</a> Glioblastoma project. 206 primary glioblastoma samples.<br> <a href="https://tcga-data.nci.nih.gov/docs/publications/gbm_2008/">Raw data via the TCGA Data Portal</a>.
-43                                                                                                                                                                                                                                              TCGA Glioblastoma Multiforme; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-44                                                                                                                                                                                                                                        Comprehensive profiling of 74 head and neck squamous cell carcinoma samples from the Broad Institute.
-45                                                                                                                                                                                                                                              Comprehensive profiling of 32 head and neck squamous cell carcinoma samples from Johns Hopkins.
-46                                                                                                           TCGA Head and Neck Squamous Cell Carcinoma, containing 279 samples; raw data at the <A HREF="https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=HNSC&diseaseName=Head and Neck Squamous Cell Carcinoma">NCI</A>.
-47                                                                                                                                                                                                                                TCGA Head and Neck Squamous Cell Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-48                                                                                                                                                                                                                                     Whole genome sequencing (WGS) of 22 infant MLL-rearranged acute lymphoblastic leukemia (MLL-R ALL) cases
-49                                                                                                                                                                                                                                             Exome Sequencing of 32 intrahepatic cholangiocarcinoma cases and 8 gall bladder carcinoma cases.
-50                                                                                                                                                                         TCGA Kidney Chromophobe; raw data at the <A HREF="https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=KICH&diseaseName=Kidney Chromophobe">NCI</A>.
-51                                                                                                                                                                                                                                                   TCGA Kidney Chromophobe; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-52                                                                                                                                                                                                                                                  Comprehensive sequencing of 98 clear cell kidney cancer samples. Generated by BGI-Shenzhen.
-53                                                                                                                   TCGA Kidney Renal Clear Cell Carcinoma, containing 499 samples; raw data at the <A HREF="https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=KIRC&diseaseName=Kidney Renal Clear Cell Carcinoma">NCI</A>.
-54                                                                                                                                                                                                                                    TCGA Kidney Renal Clear Cell Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-55                                                                                                                                                                                                                                TCGA Kidney Renal Papillary Cell Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-56                                                                                                                                                                                                                                                      Liver Hepatocellular Carcinoma from Asan Medical Center, Korea, containing 231 samples.
-57                                                                                                                                                                                                                                                                   Whole-genome sequencing of 27 hepatocellular carcinoma samples from RIKEN.
-58                                                                                                                                                                                                                                       TCGA Liver Hepatocellular Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-59                                                                                                                                                                                                                                                                    Mutation data from whole exome sequencing of 23 grade II glioma patients.
-60                                                                                                                                                                                                                                                Comprehensive profiling of 183 lung adenocarcinoma samples. Generated by the Broad Institute.
-61                                                                                                                                                                                                                                                             Whole-exome sequencing of non small cell lung cancers treated with pembrolizumab
-62                                                                                                                                                TCGA Lung Adenocarcinoma, containing 230 samples; raw data at the <A HREF="https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=LUAD&diseaseName=Lung Adenoarcinoma">NCI</A>.
-63                                                                                                                                                                                                                                                  TCGA Lung Adenocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-64                                                                                                                                                                                                                                                            Targeted sequencing of 163 lung adenocarcinoma samples. Generated by WashU/Broad.
-65                                                                                <a href="http://cancergenome.nih.gov/">The Cancer Genome Atlas (TCGA)</a> Lung Squamous Cell Carcinoma project. 178 cases.<br><i>Nature 2012.</i> <a href="https://tcga-data.nci.nih.gov/docs/publications/lusc_2012/">Raw data via the TCGA Data Portal</a>.
-66                                                                                                                                                                                                                                         TCGA Lung Squamous Cell Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-67                                                                                                                                                                                                                      TCGA Lymphoid Neoplasm Diffuse Large B-cell Lymphoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-68                                                                                                                                                                                                                                                                              Exome profiling of 17 malignant peripheral nerve sheath tumors.
-69                                                                                                                                                                                                                                                              Comprehensive profiling of 92 medulloblastoma samples from the Broad Institute.
-70                                                                                                                                                                                                                                                                                              125 Medulloblastoma tumor / normal pairs. ICGC.
-71                                                                                                                                                   Whole genome sequencing of 37 medulloblastoma samples from the Pediatric Cancer Genome Project (PCGP), a joint project by St. Jude Children's Research Hospital and Washington University.
-72                                                                                                                                                                                                                                                             Somatic Mutation data from 25 Whole Genome Sequenced metastatic melanoma samples
-73                                                                                                                                                                                                                                                                                           Whole-exome sequencing from TCGA LGG and GBM cases
-74                                            TCGA Mesothelioma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>. <font color="red">This study under moratorium until 11/14/2016.</font>  Please adhere to <a href="http://cancergenome.nih.gov/abouttcga/policies/publicationguidelines">the TCGA publication guidelines.</a>
-75                                                                                                                                                                                                                                                  Comprehensive analysis of 150 metastatic prostate cancer samples by the SU2C/PCF Dream Team
-76                                                                                                                                                                                                                                                                                            Exome sequencing of 205 multiple myeloma samples.
-77                                                                                                                                                                                                                                             Mutation data from multi region exome sequencing of 10 clear cell renal cell carcinomas (ccRCCs)
-78                                                                                                                                                                                                                         NCI-60 cell line project; raw data at <A HREF="http://discover.nci.nih.gov/cellminer/loadDownload.do">CellMiner</A>.
-79                                                                                                                                                                                            Whole genome sequencing of 56 NPC tumor / normal pairs. Generated by the Cancer Science Institute of Singapore, National University of Singapore.
-80                                                                                                                                                                                                                                             Whole genome sequencing of 87 neuroblastoma samples from the Academic Medical Center, Amsterdam.
-81                                                                                                                                                                  Whole exome and RNA Seq data of castration resistant adenocarcinoma and castration resistant neuroendocrine prostate cancer (somatic mutations and copy number aberrations)
-82                                                                                                            <a href="http://cancergenome.nih.gov/">The Cancer Genome Atlas (TCGA)</a> Serous Ovarian Cancer project. 489 cases.<br> <a href="https://tcga-data.nci.nih.gov/docs/publications/ov_2011/">Raw data via the TCGA Data Portal</a>.
-83                                                                                                                                                                                                                                    TCGA Ovarian Serous Cystadenocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-84                                                                                                                                                                                                                                                                  Comprehensive profiling of 99 pancreatic cancer samples. Generated by ICGC.
-85                                                                                                                                                                                                                                            TCGA Pancreatic Adenocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-86                                                                                                                                                                                                                                             Whole exome sequencing of 109 micro-dissected pancreatic cancer cases and normal control tissue.
-87                                                                                                                                                                                                 Whole exome sequencing of 10 pancreatic neuroendocrine tumor patients. <A HREF="https://www.sciencemag.org/content/331/6021/1199/suppl/DC1">
-88                                                                                                                                       TCGA Papillary Thyroid Carcinoma, containing 230 samples; raw data at the <A HREF="https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=THCA&diseaseName=Thyroid%20carcinoma">NCI</A>.
-89                                                                                                                                                                                                                                                               Whole exome sequencing of 96 pediatric Ewing Sarcoma tumors and 11 cell lines.
-90                                                                                                                                                                                                                                   TCGA Pheochromocytoma and Paraganglioma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-91                                                                                                                                                                                                                           Next generation sequencing (MSK-IMPACT) of 84 poorly-differentiated (PDTC) and 33 anaplastic thyroid cancers (ATC)
-92                                                                                                                                                                                                               Mutation data from whole exome sequencing (WXS) of 10 immunocompetent primary central nervous system lymphoma (PCNSL) samples.
-93                                                                                                                                                                                              Comprehensive profiling of 57 prostate cancer samples. Generated by Levi Garraway's lab at the Broad Institute and Mark Rubin's lab at Cornell.
-94                                                                                                                                                                                             Comprehensive profiling of 112 prostate cancer samples. Generated by Levi Garraway's lab at the Broad Institute and Mark Rubin's lab at Cornell.
-95  MSKCC Prostate Oncogenome Project. 181 primary, 37 metastatic prostate cancer samples, 12 prostate cancer cell lines and xenografts.<br><a href="http://cbio.mskcc.org/cancergenomics/prostate/data/">Normalized flat data files</a>. <a href="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE21032">Raw data via GEO (GSE21032)</a>.
-96                                                                                                                                                                                                           Comprehensive profiling of prostate cancer samples. Generated by Peter Nelson's lab at the Fred Hutchinson Cancer Research Center.
-97                                                                                                                                                                           Integrated profiling of 333 primary prostate adenocarcinoma samples; raw data at the <A HREF="https://tcga-data.nci.nih.gov/docs/publications/prad_2015/">NCI</A>.
-98                                                                                                                                                                                                                                              TCGA Prostate Adenocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-99                                                                                                                                                               Copy-number profiling of 103 primary prostate cancer samples from MSKCC. <a href="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54691">Raw data via GEO (GSE54691)</a>.
-100                                                                                                                                                                                                                                                                           Exome profiling of prostate cancer samples and matched organoids.
-101                                                                                                                    Comprehensive profiling of 61 prostate cancer samples, including 50 metastatic CRPCs and 11 high-grade localized prostate cancers. Generated by Arul Chinnaiyan's and Scott Tomlins' labs at the University of Michigan.
-102                                                                                                                                                                                                                                                                    Exome sequencing of 139 Renal Non-Clear Cell Carcinoma (NCCRCC) samples.
-103                                                                                                                                                                                                                                                                           Mutation data from WGS and/or WXS of 43 rhabdomyosarcoma samples.
-104           The Sarcoma Genome Project, <a href="http://www.mskcc.org/">MSKCC</a> and <a href="http://www.broadinstitute.org/">The Broad Institute</a>. 207 high-grade adult soft tissue sarcomas across seven subtypes of disease.<br> <a href="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE21124">Raw data via GEO (GSE21124)</a>.
-105                                                TCGA Sarcoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>. <font color="red">This study under moratorium until 11/28/2016.</font>  Please adhere to <a href="http://cancergenome.nih.gov/abouttcga/policies/publicationguidelines">the TCGA publication guidelines.</a>
-106                                                                                                                                                                                                                                                          Comprehensive profiling of 121 melanoma samples. Generated by the Broad Institute.
-107                                                                                                                                                                                                                                             TCGA Skin Cutaneous Melanoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-108                                                                                                                                                                                                                                                                                 Exome sequencing of 91 melanoma samples. Generated by Yale.
-109                                                                                                                                                                                                                                                                                                     Targeted sequencing of 12 SCCO samples.
-110                                                                                                                                                                                                                         Comprehensive profiling of 29 small cell lung cancer samples. Generated by the Clinical Lung Cancer Genome Project.
-111                                                                                                                                                                                                      Comprehensive profiling of 36 primary human SCLC tumors and 17 matched SCLC and lymphoblastoid cell lines. Generated by Johns Hopkins.
-112                                                                                                                                                                                                                                                                                    Comprehensive WGS profiling of 110 human SCLC specimens.
-113                                                                                                                                                                                                                                              Whole genome sequencing of 100 tumor-normal pairs from the University of Hong Kong and Pfizer.
-114                                                                                                                                                                                          TCGA Stomach Adenocarcinoma, containing 295 samples; raw data at the <A HREF="https://tcga-data.nci.nih.gov/docs/publications/stad_2014/">NCI</A>.
-115                                                                                                                                                                                                                                              TCGA Stomach Adenocarcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-116                                                                                                                                                                                                                                      Whole exome sequencing of 30 diffuse-type gastric adenocarcinoma samples from the University of Tokyo.
-117                                                                                                                                                                                                                                                                                              Exome sequencing of 22 gastric cancer samples.
-118                            TCGA Testicular Germ Cell Cancer; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>. <font color="red">This study under moratorium until 11/14/2016.</font>  Please adhere to <a href="http://cancergenome.nih.gov/abouttcga/policies/publicationguidelines">the TCGA publication guidelines.</a>
-119                                                                                                                                                                                                                                                                                      Whole exome sequencing of 28 thymic epithelial tumors.
-120                                                TCGA Thymoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>. <font color="red">This study under moratorium until 12/18/2016.</font>  Please adhere to <a href="http://cancergenome.nih.gov/abouttcga/policies/publicationguidelines">the TCGA publication guidelines.</a>
-121                                                                                                                                                                                                                                                   TCGA Thyroid Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-122                                                                                                                                           Whole exome sequencing (WXS) of 22 uterine carcinosarcoma/uterine malignant mixed Mullerian (UCS) tumors. <A HREF="http://www.nature.com/ncomms/2014/140919/ncomms6006/extref/ncomms6006-s1.pdf">
-123                                                                                                                                                                                                                                              TCGA Uterine Carcinosarcoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-124                                                                                                                                                                                                                                TCGA Uterine Corpus Endometrial Carcinoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-125                                                                                                                                                                           TCGA Uterine Corpus Endometrioid Carcinoma, containing 373 samples; raw data at the <A HREF="https://tcga-data.nci.nih.gov/docs/publications/ucec_2013/">NCI</A>.
-126                                                                                                                                                                                                                                                      TCGA Uveal Melanoma; raw data at the <A HREF="https://tcga-data.nci.nih.gov/">NCI</A>.
-[1] "a list of genetic profiles for the TCGA dataset"
-                         genetic_profile_id
-1               brca_tcga_methylation_hm450
-2                brca_tcga_methylation_hm27
-3                      brca_tcga_linear_CNA
-4  brca_tcga_rna_seq_v2_mrna_median_Zscores
-5                 brca_tcga_rna_seq_v2_mrna
-6             brca_tcga_mrna_median_Zscores
-7                          brca_tcga_gistic
-8                    brca_tcga_rppa_Zscores
-9              brca_tcga_RPPA_protein_level
-10                           brca_tcga_rppa
-11                      brca_tcga_mutations
-12                           brca_tcga_mrna
-                           genetic_profile_name
-1                           Methylation (HM450)
-2                            Methylation (HM27)
-3            Relative linear copy-number values
-4    mRNA Expression z-Scores (RNA Seq V2 RSEM)
-5             mRNA expression (RNA Seq V2 RSEM)
-6         mRNA Expression z-Scores (microarray)
-7  Putative copy-number alterations from GISTIC
-8            Protein expression Z-scores (RPPA)
-9           protein/phosphoprotein level (RPPA)
-10                    Protein expression (RPPA)
-11                                    Mutations
-12                 mRNA expression (microarray)
-                                                                                                                                                                          genetic_profile_description
-1                                                 Methylation (HM450) beta-values for genes in 885 cases. For genes with multiple methylation probes, the probe most anti-correlated with expression.
-2                                                  Methylation (HM27) beta-values for genes in 343 cases. For genes with multiple methylation probes, the probe most anti-correlated with expression.
-3                                                                                                                            Relative linear copy-number values for each gene (from Affymetrix SNP6).
-4                                                                         mRNA z-Scores (RNA Seq V2 RSEM) compared to the expression distribution of each gene tumors that are diploid for this gene.
-5                                                                                                                             Expression levels for 20532 genes in 1212 brca cases (RNA Seq V2 RSEM).
-6                                                                      mRNA z-Scores (Agilent microarray) compared to the expression distribution of each gene tumors that are diploid for this gene.
-7  Putative copy-number calls on 1080 cases determined using GISTIC 2.0. Values: -2 = homozygous deletion; -1 = hemizygous deletion; 0 = neutral / no change; 1 = gain; 2 = high level amplification.
-8                                                                                                                               Protein expression, measured by reverse-phase protein array, Z-scores
-9                                                                                                           Protein or phosphoprotein level (Z-scores) measured by reverse phase protein array (RPPA)
-10                                                                                                                                         Protein expression measured by reverse-phase protein array
-11                                                                                                                                                         Mutation data from whole exome sequencing.
-12                                                                                                                          Expression levels for 17155 genes in 590 brca cases (Agilent microarray).
-   cancer_study_id     genetic_alteration_type show_profile_in_analysis_tab
-1              188                 METHYLATION                        false
-2              188                 METHYLATION                        false
-3              188      COPY_NUMBER_ALTERATION                        false
-4              188             MRNA_EXPRESSION                         true
-5              188             MRNA_EXPRESSION                        false
-6              188             MRNA_EXPRESSION                         true
-7              188      COPY_NUMBER_ALTERATION                         true
-8              188               PROTEIN_LEVEL                         true
-9              188 PROTEIN_ARRAY_PROTEIN_LEVEL                         true
-10             188               PROTEIN_LEVEL                        false
-11             188           MUTATION_EXTENDED                         true
-12             188             MRNA_EXPRESSION                        false
 [1] "a list of clinical data fields available for TCGA dataset"
-  [1] "AGE"
-  [2] "AJCC_METASTASIS_PATHOLOGIC_PM"
-  [3] "AJCC_NODES_PATHOLOGIC_PN"
-  [4] "AJCC_PATHOLOGIC_TUMOR_STAGE"
-  [5] "AJCC_STAGING_EDITION"
-  [6] "AJCC_TUMOR_PATHOLOGIC_PT"
-  [7] "BRACHYTHERAPY_TOTAL_DOSE_POINT_A"
-  [8] "CENT17_COPY_NUMBER"
-  [9] "DAYS_TO_BIRTH"
- [10] "DAYS_TO_COLLECTION"
- [11] "DAYS_TO_DEATH"
- [12] "DAYS_TO_INITIAL_PATHOLOGIC_DIAGNOSIS"
- [13] "DAYS_TO_LAST_FOLLOWUP"
- [14] "DFS_MONTHS"
- [15] "DFS_STATUS"
- [16] "DISEASE_CODE"
- [17] "ER_POSITIVITY_SCALE_OTHER"
- [18] "ER_POSITIVITY_SCALE_USED"
- [19] "ER_STATUS_BY_IHC"
- [20] "ER_STATUS_IHC_PERCENT_POSITIVE"
- [21] "ETHNICITY"
- [22] "FIRST_SURGICAL_PROCEDURE_OTHER"
- [23] "FORM_COMPLETION_DATE"
- [24] "GENDER"
- [25] "HER2_AND_CENT17_CELLS_COUNT"
- [26] "HER2_AND_CENT17_SCALE_OTHER"
- [27] "HER2_CENT17_RATIO"
- [28] "HER2_COPY_NUMBER"
- [29] "HER2_FISH_METHOD"
- [30] "HER2_FISH_STATUS"
- [31] "HER2_IHC_PERCENT_POSITIVE"
- [32] "HER2_IHC_SCORE"
- [33] "HER2_POSITIVITY_METHOD_TEXT"
- [34] "HER2_POSITIVITY_SCALE_OTHER"
- [35] "HISTOLOGICAL_SUBTYPE"
- [36] "HISTORY_NEOADJUVANT_TRTYN"
- [37] "HISTORY_OTHER_MALIGNANCY"
- [38] "ICD_10"
- [39] "ICD_O_3_HISTOLOGY"
- [40] "ICD_O_3_SITE"
- [41] "IHC_HER2"
- [42] "IHC_SCORE"
- [43] "INFORMED_CONSENT_VERIFIED"
- [44] "INITIAL_PATHOLOGIC_DX_YEAR"
- [45] "INITIAL_WEIGHT"
- [46] "IS_FFPE"
- [47] "LYMPH_NODES_EXAMINED"
- [48] "LYMPH_NODES_EXAMINED_HE_COUNT"
- [49] "LYMPH_NODES_EXAMINED_IHC_COUNT"
- [50] "LYMPH_NODE_EXAMINED_COUNT"
- [51] "MARGIN_STATUS_REEXCISION"
- [52] "MENOPAUSE_STATUS"
- [53] "METASTATIC_SITE"
- [54] "METASTATIC_SITE_OTHER"
- [55] "METASTATIC_TUMOR_INDICATOR"
- [56] "METHOD_OF_INITIAL_SAMPLE_PROCUREMENT"
+  [1] "AGE"                                       
+  [2] "AJCC_METASTASIS_PATHOLOGIC_PM"             
+  [3] "AJCC_NODES_PATHOLOGIC_PN"                  
+  [4] "AJCC_PATHOLOGIC_TUMOR_STAGE"               
+  [5] "AJCC_STAGING_EDITION"                      
+  [6] "AJCC_TUMOR_PATHOLOGIC_PT"                  
+  [7] "BRACHYTHERAPY_TOTAL_DOSE_POINT_A"          
+  [8] "CENT17_COPY_NUMBER"                        
+  [9] "DAYS_TO_BIRTH"                             
+ [10] "DAYS_TO_COLLECTION"                        
+ [11] "DAYS_TO_DEATH"                             
+ [12] "DAYS_TO_INITIAL_PATHOLOGIC_DIAGNOSIS"      
+ [13] "DAYS_TO_LAST_FOLLOWUP"                     
+ [14] "DFS_MONTHS"                                
+ [15] "DFS_STATUS"                                
+ [16] "DISEASE_CODE"                              
+ [17] "ER_POSITIVITY_SCALE_OTHER"                 
+ [18] "ER_POSITIVITY_SCALE_USED"                  
+ [19] "ER_STATUS_BY_IHC"                          
+ [20] "ER_STATUS_IHC_PERCENT_POSITIVE"            
+ [21] "ETHNICITY"                                 
+ [22] "FIRST_SURGICAL_PROCEDURE_OTHER"            
+ [23] "FORM_COMPLETION_DATE"                      
+ [24] "GENDER"                                    
+ [25] "HER2_AND_CENT17_CELLS_COUNT"               
+ [26] "HER2_AND_CENT17_SCALE_OTHER"               
+ [27] "HER2_CENT17_RATIO"                         
+ [28] "HER2_COPY_NUMBER"                          
+ [29] "HER2_FISH_METHOD"                          
+ [30] "HER2_FISH_STATUS"                          
+ [31] "HER2_IHC_PERCENT_POSITIVE"                 
+ [32] "HER2_IHC_SCORE"                            
+ [33] "HER2_POSITIVITY_METHOD_TEXT"               
+ [34] "HER2_POSITIVITY_SCALE_OTHER"               
+ [35] "HISTOLOGICAL_SUBTYPE"                      
+ [36] "HISTORY_NEOADJUVANT_TRTYN"                 
+ [37] "HISTORY_OTHER_MALIGNANCY"                  
+ [38] "ICD_10"                                    
+ [39] "ICD_O_3_HISTOLOGY"                         
+ [40] "ICD_O_3_SITE"                              
+ [41] "IHC_HER2"                                  
+ [42] "IHC_SCORE"                                 
+ [43] "INFORMED_CONSENT_VERIFIED"                 
+ [44] "INITIAL_PATHOLOGIC_DX_YEAR"                
+ [45] "INITIAL_WEIGHT"                            
+ [46] "IS_FFPE"                                   
+ [47] "LYMPH_NODES_EXAMINED"                      
+ [48] "LYMPH_NODES_EXAMINED_HE_COUNT"             
+ [49] "LYMPH_NODES_EXAMINED_IHC_COUNT"            
+ [50] "LYMPH_NODE_EXAMINED_COUNT"                 
+ [51] "MARGIN_STATUS_REEXCISION"                  
+ [52] "MENOPAUSE_STATUS"                          
+ [53] "METASTATIC_SITE"                           
+ [54] "METASTATIC_SITE_OTHER"                     
+ [55] "METASTATIC_TUMOR_INDICATOR"                
+ [56] "METHOD_OF_INITIAL_SAMPLE_PROCUREMENT"      
  [57] "METHOD_OF_INITIAL_SAMPLE_PROCUREMENT_OTHER"
- [58] "MICROMET_DETECTION_BY_IHC"
- [59] "NEW_TUMOR_EVENT_AFTER_INITIAL_TREATMENT"
- [60] "NTE_CENT_17_HER2_RATIO"
- [61] "NTE_ER_IHC_INTENSITY_SCORE"
- [62] "NTE_ER_STATUS"
- [63] "NTE_ER_STATUS_IHC__POSITIVE"
- [64] "NTE_HER2_FISH_STATUS"
- [65] "NTE_HER2_POSITIVITY_IHC_SCORE"
- [66] "NTE_HER2_STATUS"
- [67] "NTE_HER2_STATUS_IHC__POSITIVE"
- [68] "NTE_PR_IHC_INTENSITY_SCORE"
- [69] "NTE_PR_STATUS_BY_IHC"
- [70] "NTE_PR_STATUS_IHC__POSITIVE"
- [71] "OCT_EMBEDDED"
- [72] "OS_MONTHS"
- [73] "OS_STATUS"
- [74] "PATHOLOGY_REPORT_FILE_NAME"
- [75] "PATHOLOGY_REPORT_UUID"
- [76] "PATH_MARGIN"
- [77] "PHARMACEUTICAL_TX_ADJUVANT"
- [78] "PRIMARY_SITE"
- [79] "PROJECT_CODE"
- [80] "PROSPECTIVE_COLLECTION"
- [81] "PR_POSITIVITY_DEFINE_METHOD"
- [82] "PR_POSITIVITY_IHC_INTENSITY_SCORE"
- [83] "PR_POSITIVITY_SCALE_OTHER"
- [84] "PR_POSITIVITY_SCALE_USED"
- [85] "PR_STATUS_BY_IHC"
- [86] "PR_STATUS_IHC_PERCENT_POSITIVE"
- [87] "RACE"
- [88] "RADIATION_TREATMENT_ADJUVANT"
- [89] "RETROSPECTIVE_COLLECTION"
- [90] "SAMPLE_TYPE"
- [91] "SAMPLE_TYPE_ID"
- [92] "STAGING_SYSTEM"
- [93] "STAGING_SYSTEM_OTHER"
- [94] "SURGERY_FOR_POSITIVE_MARGINS"
- [95] "SURGERY_FOR_POSITIVE_MARGINS_OTHER"
- [96] "SURGICAL_PROCEDURE_FIRST"
- [97] "TISSUE_SOURCE_SITE"
- [98] "TUMOR_STATUS"
- [99] "TUMOR_TISSUE_SITE"
-[100] "VIAL_NUMBER"
-[101] "VITAL_STATUS"
+ [58] "MICROMET_DETECTION_BY_IHC"                 
+ [59] "NEW_TUMOR_EVENT_AFTER_INITIAL_TREATMENT"   
+ [60] "NTE_CENT_17_HER2_RATIO"                    
+ [61] "NTE_ER_IHC_INTENSITY_SCORE"                
+ [62] "NTE_ER_STATUS"                             
+ [63] "NTE_ER_STATUS_IHC__POSITIVE"               
+ [64] "NTE_HER2_FISH_STATUS"                      
+ [65] "NTE_HER2_POSITIVITY_IHC_SCORE"             
+ [66] "NTE_HER2_STATUS"                           
+ [67] "NTE_HER2_STATUS_IHC__POSITIVE"             
+ [68] "NTE_PR_IHC_INTENSITY_SCORE"                
+ [69] "NTE_PR_STATUS_BY_IHC"                      
+ [70] "NTE_PR_STATUS_IHC__POSITIVE"               
+ [71] "OCT_EMBEDDED"                              
+ [72] "OS_MONTHS"                                 
+ [73] "OS_STATUS"                                 
+ [74] "PATHOLOGY_REPORT_FILE_NAME"                
+ [75] "PATHOLOGY_REPORT_UUID"                     
+ [76] "PATH_MARGIN"                               
+ [77] "PHARMACEUTICAL_TX_ADJUVANT"                
+ [78] "PRIMARY_SITE"                              
+ [79] "PROJECT_CODE"                              
+ [80] "PROSPECTIVE_COLLECTION"                    
+ [81] "PR_POSITIVITY_DEFINE_METHOD"               
+ [82] "PR_POSITIVITY_IHC_INTENSITY_SCORE"         
+ [83] "PR_POSITIVITY_SCALE_OTHER"                 
+ [84] "PR_POSITIVITY_SCALE_USED"                  
+ [85] "PR_STATUS_BY_IHC"                          
+ [86] "PR_STATUS_IHC_PERCENT_POSITIVE"            
+ [87] "RACE"                                      
+ [88] "RADIATION_TREATMENT_ADJUVANT"              
+ [89] "RETROSPECTIVE_COLLECTION"                  
+ [90] "SAMPLE_TYPE"                               
+ [91] "SAMPLE_TYPE_ID"                            
+ [92] "STAGING_SYSTEM"                            
+ [93] "STAGING_SYSTEM_OTHER"                      
+ [94] "SURGERY_FOR_POSITIVE_MARGINS"              
+ [95] "SURGERY_FOR_POSITIVE_MARGINS_OTHER"        
+ [96] "SURGICAL_PROCEDURE_FIRST"                  
+ [97] "TISSUE_SOURCE_SITE"                        
+ [98] "TUMOR_STATUS"                              
+ [99] "TUMOR_TISSUE_SITE"                         
+[100] "VIAL_NUMBER"                               
+[101] "VITAL_STATUS"                              
                case                metastatic.site mets.indicator
- 1: TCGA.A2.A0CS.01                 Other, specify
- 2: TCGA.A2.A0SV.01                           Bone
- 3: TCGA.A2.A0SW.01                          Liver
- 4: TCGA.A2.A0T2.01                          Liver
- 5: TCGA.AO.A0J5.01                Lung|Bone|Liver
- 6: TCGA.AR.A0U2.01                     Bone|Liver
+ 1: TCGA.A2.A0CS.01                 Other, specify               
+ 2: TCGA.A2.A0SV.01                           Bone               
+ 3: TCGA.A2.A0SW.01                          Liver               
+ 4: TCGA.A2.A0T2.01                          Liver               
+ 5: TCGA.AO.A0J5.01                Lung|Bone|Liver               
+ 6: TCGA.AR.A0U2.01                     Bone|Liver               
  7: TCGA.AR.A2LH.01                     Bone|Liver            YES
- 8: TCGA.B6.A0I9.01                           Bone
- 9: TCGA.B6.A0IB.01                 Other, specify
-10: TCGA.B6.A3ZX.01                           Bone
+ 8: TCGA.B6.A0I9.01                           Bone               
+ 9: TCGA.B6.A0IB.01                 Other, specify               
+10: TCGA.B6.A3ZX.01                           Bone               
 11: TCGA.BH.A18J.01                           Bone            YES
 12: TCGA.BH.A18V.01                 Other, specify            YES
 13: TCGA.BH.A1FH.01                           Bone            YES
@@ -643,7 +208,332 @@
 54: TCGA.C8.A1HM.01                             NO        Stage IIA
 55: TCGA.C8.A273.01                                       Stage IIB
 56: TCGA.D8.A140.01                                       Stage IIB
-57: TCGA.D8.A147.01
+57: TCGA.D8.A147.01                                                
+58: TCGA.D8.A1X9.01                             NO        Stage IIB
+59: TCGA.D8.A1XT.01                             NO        Stage IIA
+60: TCGA.D8.A27G.01                             NO        Stage IIA
+61: TCGA.D8.A27H.01                             NO        Stage IIA
+62: TCGA.D8.A27N.01                             NO       Stage IIIA
+63: TCGA.D8.A27W.01                             NO       Stage IIIB
+64: TCGA.E2.A105.01                                       Stage IIA
+65: TCGA.E2.A109.01                                       Stage IIA
+66: TCGA.E2.A14P.01                             NO       Stage IIIC
+67: TCGA.E2.A14T.01                             NO        Stage IIA
+68: TCGA.E2.A155.01                             NO        Stage IIB
+69: TCGA.E2.A15H.01                             NO        Stage IIA
+70: TCGA.E2.A1B1.01                             NO        Stage IIB
+71: TCGA.E2.A1B5.01                             NO        Stage IIA
+72: TCGA.E9.A1NA.01                             NO        Stage IIA
+73: TCGA.E9.A1NE.01                             NO        Stage IIB
+74: TCGA.E9.A1RF.01                             NO       Stage IIIA
+75: TCGA.E9.A3QA.01                             NO        Stage IIA
+76: TCGA.EW.A1J1.01                             NO        Stage IIB
+77: TCGA.EW.A1OY.01                             NO        Stage IIA
+78: TCGA.EW.A1OZ.01                             NO        Stage IIA
+79: TCGA.EW.A1PD.01                             NO        Stage IIA
+80: TCGA.EW.A2FS.01                             NO        Stage IIB
+81: TCGA.EW.A2FV.01                             NO       Stage IIIC
+82: TCGA.LL.A5YP.01                                       Stage IIB
+83: TCGA.OL.A5RW.01                                       Stage IIA
+               case metastatic.site mets.indicator AJCC.tumor.stage
+    AJCC.metastasis AJCC.nodes AJCC.nodes.positive CACNG4 TP53 high.amp gain
+ 1:              M0         N0               FALSE      2    0     TRUE TRUE
+ 2:              MX         N1                TRUE      2   -1     TRUE TRUE
+ 3:              M0         N3                TRUE      2   -1     TRUE TRUE
+ 4:              M0         N0               FALSE      2   -1     TRUE TRUE
+ 5:              M0         N1                TRUE      2   -1     TRUE TRUE
+ 6:              M0         N1                TRUE      2   -1     TRUE TRUE
+ 7:              M0         N1                TRUE      2   -1     TRUE TRUE
+ 8:              M0         N2                TRUE      2   -1     TRUE TRUE
+ 9:              M0         N1                TRUE      2   -1     TRUE TRUE
+10:              M0         N0               FALSE      2   -1     TRUE TRUE
+11:              MX         N2                TRUE      2   -2     TRUE TRUE
+12:              M0         N0               FALSE      2   -2     TRUE TRUE
+13:              M0         N1                TRUE      2   -1     TRUE TRUE
+14:              M0         N1                TRUE      2   -1     TRUE TRUE
+15:              M0         N1                TRUE      2   -1     TRUE TRUE
+16:              M0         N3                TRUE      2   -1     TRUE TRUE
+17:              M0         N0               FALSE      2   -2     TRUE TRUE
+18:              M1         N3                TRUE      2   -1     TRUE TRUE
+19:              M1         N3                TRUE      2   -1     TRUE TRUE
+20:              M0         NX                TRUE      2   -1     TRUE TRUE
+21:              M0         N0               FALSE      2   -1     TRUE TRUE
+22:              M0         N1                TRUE      2   -1     TRUE TRUE
+23:              M0         N3                TRUE      2    0     TRUE TRUE
+24:              MX         N0               FALSE      2    1     TRUE TRUE
+25:              M0         N0               FALSE      2   -1     TRUE TRUE
+26:              M0         N0               FALSE      2   -1     TRUE TRUE
+27:              M0         N2                TRUE      2   -1     TRUE TRUE
+28:              M0         N2                TRUE      2   -1     TRUE TRUE
+29:              M0         N0               FALSE      2   -1     TRUE TRUE
+30:              M0         N1                TRUE      2   -1     TRUE TRUE
+31:              M1         N1                TRUE      2    0     TRUE TRUE
+32:              M0         N1                TRUE      2   -1     TRUE TRUE
+33:              M0         N1                TRUE      2   -1     TRUE TRUE
+34:              MX         N2                TRUE      2   -1     TRUE TRUE
+35:              M0         N0               FALSE      2   -1     TRUE TRUE
+36:              M0         N0               FALSE      2   -1     TRUE TRUE
+37:              M0         N1                TRUE      2   -1     TRUE TRUE
+38:              M0         N0               FALSE      2   -1     TRUE TRUE
+39:              M0         N0               FALSE      2   -1     TRUE TRUE
+40:              MX         NX                TRUE      2   -1     TRUE TRUE
+41:              M0         N0               FALSE      2   -1     TRUE TRUE
+42:              M0         N1                TRUE      2   -1     TRUE TRUE
+43:              M0         N0               FALSE      2   -1     TRUE TRUE
+44:              M0         N0               FALSE      2    0     TRUE TRUE
+45:              M0         N0               FALSE      2   -1     TRUE TRUE
+46:              M0         N1                TRUE      2   -1     TRUE TRUE
+47:              M0         N1                TRUE      2    0     TRUE TRUE
+48:              M0         N2                TRUE      2   -1     TRUE TRUE
+49:              M0         N0               FALSE      2    0     TRUE TRUE
+50:              M0         N1                TRUE      2   -1     TRUE TRUE
+51:              M0         N1                TRUE      2   -1     TRUE TRUE
+52:              M0         N0               FALSE      2   -1     TRUE TRUE
+53:              M0         N1                TRUE      2   -1     TRUE TRUE
+54:              M0         N0               FALSE      2   -1     TRUE TRUE
+55:              M0         N1                TRUE      2    0     TRUE TRUE
+56:              M0         N1                TRUE      2    0     TRUE TRUE
+57:              M0         N0               FALSE      2   -1     TRUE TRUE
+58:              M0         N1                TRUE      2   -1     TRUE TRUE
+59:              M0         N1                TRUE      2   -1     TRUE TRUE
+60:              M0         N0               FALSE      2   -1     TRUE TRUE
+61:              M0         N0               FALSE      2   -1     TRUE TRUE
+62:              M0         N2                TRUE      2   -1     TRUE TRUE
+63:              M0         N0               FALSE      2    0     TRUE TRUE
+64:              M0         N0               FALSE      2   -1     TRUE TRUE
+65:              M0         N0               FALSE      2   -1     TRUE TRUE
+66:              M0         N3                TRUE      2    0     TRUE TRUE
+67:              M0         N0               FALSE      2   -1     TRUE TRUE
+68:              M0         N1                TRUE      2   -1     TRUE TRUE
+69:              M0         N1                TRUE      2   -1     TRUE TRUE
+70:              M0         N1                TRUE      2   -1     TRUE TRUE
+71:              M0         N0               FALSE      2   -1     TRUE TRUE
+72:              M0         N0               FALSE      2   -1     TRUE TRUE
+73:              M0         N1                TRUE      2    0     TRUE TRUE
+74:              M0         N2                TRUE      2    0     TRUE TRUE
+75:              M0         N0               FALSE      2   -1     TRUE TRUE
+76:              M0         N1                TRUE      2   -1     TRUE TRUE
+77:              MX         N0               FALSE      2   -1     TRUE TRUE
+78:              M0         N0               FALSE      2   -1     TRUE TRUE
+79:              M0         N1                TRUE      2   -1     TRUE TRUE
+80:              MX         N1                TRUE      2   -1     TRUE TRUE
+81:              MX         N3                TRUE      2   -1     TRUE TRUE
+82:              M0         N1                TRUE      2    1     TRUE TRUE
+83:              MX         N1                TRUE      2   -1     TRUE TRUE
+    AJCC.metastasis AJCC.nodes AJCC.nodes.positive CACNG4 TP53 high.amp gain
+[1] "category =  , odds ratio =  1.37981118373275"
+[1] "category =  ,  95 % confidence interval = [ 0.871814227595667 , 2.18381260879923 ]"
+[1] "a list of clinical data fields available for TCGA dataset"
+  [1] "AGE"                                       
+  [2] "AJCC_METASTASIS_PATHOLOGIC_PM"             
+  [3] "AJCC_NODES_PATHOLOGIC_PN"                  
+  [4] "AJCC_PATHOLOGIC_TUMOR_STAGE"               
+  [5] "AJCC_STAGING_EDITION"                      
+  [6] "AJCC_TUMOR_PATHOLOGIC_PT"                  
+  [7] "BRACHYTHERAPY_TOTAL_DOSE_POINT_A"          
+  [8] "CENT17_COPY_NUMBER"                        
+  [9] "DAYS_TO_BIRTH"                             
+ [10] "DAYS_TO_COLLECTION"                        
+ [11] "DAYS_TO_DEATH"                             
+ [12] "DAYS_TO_INITIAL_PATHOLOGIC_DIAGNOSIS"      
+ [13] "DAYS_TO_LAST_FOLLOWUP"                     
+ [14] "DFS_MONTHS"                                
+ [15] "DFS_STATUS"                                
+ [16] "DISEASE_CODE"                              
+ [17] "ER_POSITIVITY_SCALE_OTHER"                 
+ [18] "ER_POSITIVITY_SCALE_USED"                  
+ [19] "ER_STATUS_BY_IHC"                          
+ [20] "ER_STATUS_IHC_PERCENT_POSITIVE"            
+ [21] "ETHNICITY"                                 
+ [22] "FIRST_SURGICAL_PROCEDURE_OTHER"            
+ [23] "FORM_COMPLETION_DATE"                      
+ [24] "GENDER"                                    
+ [25] "HER2_AND_CENT17_CELLS_COUNT"               
+ [26] "HER2_AND_CENT17_SCALE_OTHER"               
+ [27] "HER2_CENT17_RATIO"                         
+ [28] "HER2_COPY_NUMBER"                          
+ [29] "HER2_FISH_METHOD"                          
+ [30] "HER2_FISH_STATUS"                          
+ [31] "HER2_IHC_PERCENT_POSITIVE"                 
+ [32] "HER2_IHC_SCORE"                            
+ [33] "HER2_POSITIVITY_METHOD_TEXT"               
+ [34] "HER2_POSITIVITY_SCALE_OTHER"               
+ [35] "HISTOLOGICAL_SUBTYPE"                      
+ [36] "HISTORY_NEOADJUVANT_TRTYN"                 
+ [37] "HISTORY_OTHER_MALIGNANCY"                  
+ [38] "ICD_10"                                    
+ [39] "ICD_O_3_HISTOLOGY"                         
+ [40] "ICD_O_3_SITE"                              
+ [41] "IHC_HER2"                                  
+ [42] "IHC_SCORE"                                 
+ [43] "INFORMED_CONSENT_VERIFIED"                 
+ [44] "INITIAL_PATHOLOGIC_DX_YEAR"                
+ [45] "INITIAL_WEIGHT"                            
+ [46] "IS_FFPE"                                   
+ [47] "LYMPH_NODES_EXAMINED"                      
+ [48] "LYMPH_NODES_EXAMINED_HE_COUNT"             
+ [49] "LYMPH_NODES_EXAMINED_IHC_COUNT"            
+ [50] "LYMPH_NODE_EXAMINED_COUNT"                 
+ [51] "MARGIN_STATUS_REEXCISION"                  
+ [52] "MENOPAUSE_STATUS"                          
+ [53] "METASTATIC_SITE"                           
+ [54] "METASTATIC_SITE_OTHER"                     
+ [55] "METASTATIC_TUMOR_INDICATOR"                
+ [56] "METHOD_OF_INITIAL_SAMPLE_PROCUREMENT"      
+ [57] "METHOD_OF_INITIAL_SAMPLE_PROCUREMENT_OTHER"
+ [58] "MICROMET_DETECTION_BY_IHC"                 
+ [59] "NEW_TUMOR_EVENT_AFTER_INITIAL_TREATMENT"   
+ [60] "NTE_CENT_17_HER2_RATIO"                    
+ [61] "NTE_ER_IHC_INTENSITY_SCORE"                
+ [62] "NTE_ER_STATUS"                             
+ [63] "NTE_ER_STATUS_IHC__POSITIVE"               
+ [64] "NTE_HER2_FISH_STATUS"                      
+ [65] "NTE_HER2_POSITIVITY_IHC_SCORE"             
+ [66] "NTE_HER2_STATUS"                           
+ [67] "NTE_HER2_STATUS_IHC__POSITIVE"             
+ [68] "NTE_PR_IHC_INTENSITY_SCORE"                
+ [69] "NTE_PR_STATUS_BY_IHC"                      
+ [70] "NTE_PR_STATUS_IHC__POSITIVE"               
+ [71] "OCT_EMBEDDED"                              
+ [72] "OS_MONTHS"                                 
+ [73] "OS_STATUS"                                 
+ [74] "PATHOLOGY_REPORT_FILE_NAME"                
+ [75] "PATHOLOGY_REPORT_UUID"                     
+ [76] "PATH_MARGIN"                               
+ [77] "PHARMACEUTICAL_TX_ADJUVANT"                
+ [78] "PRIMARY_SITE"                              
+ [79] "PROJECT_CODE"                              
+ [80] "PROSPECTIVE_COLLECTION"                    
+ [81] "PR_POSITIVITY_DEFINE_METHOD"               
+ [82] "PR_POSITIVITY_IHC_INTENSITY_SCORE"         
+ [83] "PR_POSITIVITY_SCALE_OTHER"                 
+ [84] "PR_POSITIVITY_SCALE_USED"                  
+ [85] "PR_STATUS_BY_IHC"                          
+ [86] "PR_STATUS_IHC_PERCENT_POSITIVE"            
+ [87] "RACE"                                      
+ [88] "RADIATION_TREATMENT_ADJUVANT"              
+ [89] "RETROSPECTIVE_COLLECTION"                  
+ [90] "SAMPLE_TYPE"                               
+ [91] "SAMPLE_TYPE_ID"                            
+ [92] "STAGING_SYSTEM"                            
+ [93] "STAGING_SYSTEM_OTHER"                      
+ [94] "SURGERY_FOR_POSITIVE_MARGINS"              
+ [95] "SURGERY_FOR_POSITIVE_MARGINS_OTHER"        
+ [96] "SURGICAL_PROCEDURE_FIRST"                  
+ [97] "TISSUE_SOURCE_SITE"                        
+ [98] "TUMOR_STATUS"                              
+ [99] "TUMOR_TISSUE_SITE"                         
+[100] "VIAL_NUMBER"                               
+[101] "VITAL_STATUS"                              
+               case                metastatic.site mets.indicator
+ 1: TCGA.A2.A0CS.01                 Other, specify               
+ 2: TCGA.A2.A0SV.01                           Bone               
+ 3: TCGA.A2.A0SW.01                          Liver               
+ 4: TCGA.A2.A0T2.01                          Liver               
+ 5: TCGA.AO.A0J5.01                Lung|Bone|Liver               
+ 6: TCGA.AR.A0U2.01                     Bone|Liver               
+ 7: TCGA.AR.A2LH.01                     Bone|Liver            YES
+ 8: TCGA.B6.A0I9.01                           Bone               
+ 9: TCGA.B6.A0IB.01                 Other, specify               
+10: TCGA.B6.A3ZX.01                           Bone               
+11: TCGA.BH.A18J.01                           Bone            YES
+12: TCGA.BH.A18V.01                 Other, specify            YES
+13: TCGA.BH.A1FH.01                           Bone            YES
+14: TCGA.EW.A1P1.01                           Lung            YES
+15: TCGA.EW.A1P8.01 Lung|Bone|Liver|Other, specify            YES
+16: TCGA.GM.A2D9.01                           Bone            YES
+    AJCC.tumor.stage AJCC.metastasis AJCC.nodes AJCC.nodes.positive CACNG4 TP53
+ 1:         Stage IV              M1         N3                TRUE      0    0
+ 2:         Stage IV              M1         N2                TRUE      0   -1
+ 3:         Stage IV              M1         N2                TRUE      1   -1
+ 4:         Stage IV              M1         N3                TRUE      0    0
+ 5:         Stage IV              M1         N1                TRUE      2    0
+ 6:       Stage IIIA              M0         N2                TRUE      1   -1
+ 7:        Stage III              M0         N3                TRUE      0    0
+ 8:         Stage IV              M1         NX                TRUE      1   -1
+ 9:         Stage IV              M1         N3                TRUE     -1   -1
+10:         Stage IV              M1         N1                TRUE      1    0
+11:         Stage IV              M1         N2                TRUE      0   -1
+12:        Stage IIB              M0         N1                TRUE     -1   -1
+13:         Stage IV              M1         N1                TRUE      1   -1
+14:       Stage IIIC              MX         N3                TRUE      0    0
+15:       Stage IIIC              M0         N3                TRUE     -1   -1
+16:          Stage I              M0         N0               FALSE      0    0
+    high.amp  gain
+ 1:    FALSE FALSE
+ 2:    FALSE FALSE
+ 3:    FALSE  TRUE
+ 4:    FALSE FALSE
+ 5:     TRUE  TRUE
+ 6:    FALSE  TRUE
+ 7:    FALSE FALSE
+ 8:    FALSE  TRUE
+ 9:    FALSE FALSE
+10:    FALSE  TRUE
+11:    FALSE FALSE
+12:    FALSE FALSE
+13:    FALSE  TRUE
+14:    FALSE FALSE
+15:    FALSE FALSE
+16:    FALSE FALSE
+               case metastatic.site mets.indicator AJCC.tumor.stage
+ 1: TCGA.A1.A0SM.01                                       Stage IIA
+ 2: TCGA.A1.A0SN.01                                       Stage IIA
+ 3: TCGA.A2.A04P.01                                      Stage IIIC
+ 4: TCGA.A2.A04R.01                                        Stage IA
+ 5: TCGA.A2.A0CW.01                                       Stage IIB
+ 6: TCGA.A2.A0EY.01                                       Stage IIB
+ 7: TCGA.A2.A0T3.01                             NO         Stage IB
+ 8: TCGA.A2.A1FW.01                             NO       Stage IIIA
+ 9: TCGA.A2.A25B.01                             NO        Stage IIB
+10: TCGA.A2.A3XZ.01                                         Stage I
+11: TCGA.A7.A2KD.01                                      Stage IIIA
+12: TCGA.A8.A06X.01                                       Stage IIB
+13: TCGA.A8.A07L.01                                      Stage IIIA
+14: TCGA.A8.A07P.01                                       Stage IIB
+15: TCGA.A8.A085.01                                       Stage IIB
+16: TCGA.A8.A08F.01                                      Stage IIIC
+17: TCGA.A8.A08G.01                                       Stage IIA
+18: TCGA.A8.A08J.01                                        Stage IV
+19: TCGA.A8.A08O.01                                        Stage IV
+20: TCGA.A8.A09A.01                                         Stage X
+21: TCGA.A8.A09I.01                                       Stage IIA
+22: TCGA.A8.A09K.01                                       Stage IIA
+23: TCGA.A8.A09W.01                                      Stage IIIB
+24: TCGA.AC.A2QH.01                             NO        Stage IIB
+25: TCGA.AN.A0AM.01                                       Stage IIA
+26: TCGA.AN.A0FD.01                                       Stage IIA
+27: TCGA.AN.A0FW.01                                      Stage IIIA
+28: TCGA.AO.A03L.01                                      Stage IIIA
+29: TCGA.AO.A0J2.01                                        Stage IA
+30: TCGA.AO.A0J3.01                                       Stage IIB
+31: TCGA.AO.A0J5.01 Lung|Bone|Liver                        Stage IV
+32: TCGA.AO.A0JB.01                                      Stage IIIA
+33: TCGA.AO.A0JM.01                                       Stage IIB
+34: TCGA.AQ.A04H.01                                      Stage IIIA
+35: TCGA.AR.A0TY.01                                       Stage IIA
+36: TCGA.AR.A24H.01                                       Stage IIA
+37: TCGA.AR.A24L.01                                       Stage IIB
+38: TCGA.AR.A250.01                                       Stage IIA
+39: TCGA.AR.A255.01                                         Stage I
+40: TCGA.B6.A0IN.01                                         Stage X
+41: TCGA.B6.A0RG.01                                       Stage IIB
+42: TCGA.BH.A0AW.01                                       Stage IIA
+43: TCGA.BH.A0BW.01                             NO          Stage I
+44: TCGA.BH.A0DG.01                             NO        Stage IIA
+45: TCGA.BH.A0DK.01                                       Stage IIA
+46: TCGA.BH.A0DZ.01                                       Stage IIB
+47: TCGA.BH.A18R.01                             NO        Stage IIA
+48: TCGA.BH.A1FM.01                                      Stage IIIA
+49: TCGA.C8.A12M.01                                       Stage IIA
+50: TCGA.C8.A12U.01                             NO        Stage IIB
+51: TCGA.C8.A135.01                             NO        Stage IIB
+52: TCGA.C8.A1HF.01                             NO        Stage IIA
+53: TCGA.C8.A1HL.01                             NO       Stage IIIA
+54: TCGA.C8.A1HM.01                             NO        Stage IIA
+55: TCGA.C8.A273.01                                       Stage IIB
+56: TCGA.D8.A140.01                                       Stage IIB
+57: TCGA.D8.A147.01                                                
 58: TCGA.D8.A1X9.01                             NO        Stage IIB
 59: TCGA.D8.A1XT.01                             NO        Stage IIA
 60: TCGA.D8.A27G.01                             NO        Stage IIA
