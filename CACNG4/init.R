@@ -1,5 +1,8 @@
 library('cgdsr')
+library('ggplot2')
 library('data.table')
+library('survival')
+library('GGally')
 library('abd')
 library('epitools')
 
@@ -33,8 +36,6 @@ print(getGeneticProfiles(mycgds,mycancerstudy))
 	# 2 = high level amplification
 
 
-
-
 # Get data slices for a specified list of genes, genetic profile and case list
 cacng4_cna_data <- getProfileData(mycgds,c('TP53', 'CACNG4', 'PIK3CA'),mygeneticprofile,mycaselist)
 
@@ -49,6 +50,7 @@ cacng4_clinical_data <- getClinicalData(mycgds,mycaselist)
 print('a list of clinical data fields available for TCGA dataset')
 print(colnames(cacng4_clinical_data))
 
+# data.table(cacng4_clinical_data)[,.(DAYS_TO_LAST_FOLLOWUP, DAYS_TO_INITIAL_PATHOLOGIC_DIAGNOSIS, DAYS_TO_DEATH, DAYS_TO_COLLECTION)]
 
 # extract useful clinical data fields
 cacng4_clinical_data_DT <- data.table(cacng4_clinical_data)[, .(
@@ -61,8 +63,14 @@ cacng4_clinical_data_DT <- data.table(cacng4_clinical_data)[, .(
                                                               'AJCC.nodes.positive'=(substr(AJCC_NODES_PATHOLOGIC_PN, 1,2) != 'N0'),
                                                               'days.to.death'= DAYS_TO_DEATH,
                                                               'her2.fish.status'=HER2_FISH_STATUS,
-                                                              'tumor.status'=TUMOR_STATUS
+                                                              'tumor.status'=TUMOR_STATUS,
+                                                              'status'=(DAYS_TO_DEATH != 'NA'),
+                                                              'histopathological_type'=HISTOLOGICAL_SUBTYPE,
+                                                              'her.ihc.score' = HER2_IHC_SCORE
                                                               )]
+for (cols in colnames(cacng4_clinical_data_DT)){
+  print(summary(factor(cacng4_clinical_data_DT[[,cols]])))
+}
 
 
 # inner joining clinical data and cna data
@@ -113,6 +121,11 @@ colnames(tumor_stg_tbl_gain) <- c('cacng4 gain false', 'cacng4 gain true')
 prop.table(tumor_stg_tbl_gain,2)
 chisq.test(tumor_stg_tbl_gain) # p value = 0.4 not gonna work
 
+
+# survival graph
+# sf.cacng4 <- survival::survfit(Surv(time, status) ~ high.amp, data = cacng4_DT)
+# pl.cacng4 <- ggsurv(sf.cacng4, surv.col = c('#ff7171', '#949494'), cens.col='#c7c7c7', cens.shape=3, back.white=FALSE, xlab='Time (Month)', ylab='Survival') + theme(legend.position="none")
+# print(pl.cacng4)
 
 
 

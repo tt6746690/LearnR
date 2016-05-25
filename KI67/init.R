@@ -30,8 +30,12 @@ setkey(ManScoringDT, case)
 rDT <- ManScoringDT[D_TMA5_DT, nomatch=0]
 
 # rDT <- rDT[(zeroPositive < 21) & (i.zeroPositive < 21)]
+print(cor.test(rDT$zeroPositive, rDT$i.zeroPositive))
 
-print(rDT)
+print(ggplot(rDT, aes(x=zeroPositive, y=i.zeroPositive)) +
+    geom_point(shape=1) +  geom_smooth(method = "lm", se = FALSE) +
+    xlab('Manual Score') + ylab('Definiens'))
+
 # QQplot to see if difference is normally distributed
 difference = rDT$zeroPositive - rDT$i.zeroPositive
 print(qqnorm(difference))
