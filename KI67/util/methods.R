@@ -21,8 +21,6 @@ loading <- function(path){
   return(ROI_tumor_DT)
 }
 
-
-
 initialProcess <- function(DT){
     DT[, c("TMA", "case", "replicate", "dbID") := transpose(strsplit(Slide.name, "-"))]
     DT[, c("Slide.name", "replicate", "dbID") := NULL]
@@ -33,8 +31,8 @@ initialProcess <- function(DT){
        by=c("case")]
     DT <- unique(DT)[,.(TMA, case, All.Nucleus, Nucleus.High, Nucleus.Medium,
                      Nucleus.Low)][, case:=as.integer(case)][order(case)]
-    DT[, ':=' (         # in percentage
-         zeroPositive = 100*(Nucleus.High + Nucleus.Medium + Nucleus.Low)/All.Nucleus,
+    DT[, ':=' (         # in percentage chose 0% cutoff as score
+         score = 100*(Nucleus.High + Nucleus.Medium + Nucleus.Low)/All.Nucleus,
          pointFourPositive = 100*(Nucleus.High + Nucleus.Medium)/All.Nucleus,
          pointSevenPositive = 100*Nucleus.High/All.Nucleus)]
     DT[, c("Nucleus.Low", "Nucleus.Medium", "Nucleus.High", "All.Nucleus"):= NULL]
@@ -43,14 +41,43 @@ initialProcess <- function(DT){
     return(DT)
 }
 
-#
-# myBAplot <- function(DT){
-#     bland.altman.plot(group1, group2, two = 1.96, mode = 1,
-#                     graph.sys = "base", conf.int = 0, silent = TRUE, sunflower = FALSE,
-#                     geom_count = FALSE, ...)
-#     with(combined_DT, plot((zeroPositive.x + zeroPositive.y)/2, zeroPositive.x - zeroPositive.y, main="Mean-Difference-Plot"))
-#     # with(data.frame(combined_DT), BA.plot(zeroPositive.x, zeroPositive.y))
-#
-#     # BA.est(combined_DT)
-#     #
-# }
+generateStatistics <- function(DT, manual_DT){
+  print('1 TMA block analysis output:')
+
+  # To perform SQL type inner joins set ON clause as keys of tables
+  setkey(DT, case)
+  setkey(manual_DT, case)
+  # Perform inner join, eliminating not matched rows from Right
+  rDT <- manual_DT[DT, nomatch=0]
+
+  # rDT <- rDT[(score < 21) & (i.score < 21)]
+
+  # pearson correlation + scatter plot as requested
+  cat('\nPearson correlation estimates\n')
+  print(cor.test(rDT$score, rDT$i.score)$estimate)
+  cat('\nPearson correlation p-value\n')
+  print(cor.test(rDT$score, rDT$i.score)$p.value)
+
+  print(ggplot(rDT, aes(x=score, y=i.score)) +
+      geom_point(shape=1) +  geom_smooth(method = "lm", se = FALSE) +
+      xlab('Manual Score') + ylab('Definiens'))
+
+  # limits of agreements
+  difference = rDT$score - rDT$i.score
+  cat('\nlimits of agreements\n')
+  print(mean(difference)-1.96*sd(difference))
+  print(mean(difference)+1.96*sd(difference))
+
+  # 95 percent confidence interval of mean of difference
+  cat('\nz test confidence interval (if does not contain 0 -> exists bias):\n')
+  print(z.test(difference, sigma.x=sd(difference))$conf.int)
+  cat('\n\n\n\n\n')
+
+  # QQplot to see if difference is normally distributed
+  qqnorm(difference)
+  qqline(difference)
+
+  # preliminary BAplot
+  print(bland.altman.plot(rDT$score, rDT$i.score, graph.sys = "ggplot2", conf.int=.95))
+
+}

@@ -1,4 +1,4 @@
-case	zeroPositive
+case	score
 1	20
 2	9
 3	0

@@ -1,0 +1,110 @@
+[1] "1 TMA block analysis output:"
+
+Pearson correlation estimates
+     cor 
+-0.00755 
+
+Pearson correlation p-value
+[1] 0.961
+
+limits of agreements
+[1] -71.6
+[1] 33.5
+
+z test confidence interval (if does not contain 0 -> exists bias):
+[1] -26.9 -11.2
+attr(,"conf.level")
+[1] 0.95
+
+
+
+
+
+[1] "1 TMA block analysis output:"
+
+Pearson correlation estimates
+ cor 
+0.38 
+
+Pearson correlation p-value
+[1] 0.00423
+
+limits of agreements
+[1] -59.9
+[1] 24.5
+
+z test confidence interval (if does not contain 0 -> exists bias):
+[1] -23.3 -12.0
+attr(,"conf.level")
+[1] 0.95
+
+
+
+
+
+[1] "1 TMA block analysis output:"
+
+Pearson correlation estimates
+  cor 
+0.633 
+
+Pearson correlation p-value
+[1] 4.88e-07
+
+limits of agreements
+[1] -35.6
+[1] 7.85
+
+z test confidence interval (if does not contain 0 -> exists bias):
+[1] -16.9 -10.9
+attr(,"conf.level")
+[1] 0.95
+
+
+
+
+
+[1] "1 TMA block analysis output:"
+
+Pearson correlation estimates
+  cor 
+0.588 
+
+Pearson correlation p-value
+[1] 1.1e-05
+
+limits of agreements
+[1] -32
+[1] 10.4
+
+z test confidence interval (if does not contain 0 -> exists bias):
+[1] -13.83  -7.71
+attr(,"conf.level")
+[1] 0.95
+
+
+
+
+
+[1] "1 TMA block analysis output:"
+
+Pearson correlation estimates
+  cor 
+0.668 
+
+Pearson correlation p-value
+[1] 0.332
+
+limits of agreements
+[1] -15.4
+[1] 4.06
+
+z test confidence interval (if does not contain 0 -> exists bias):
+[1] -10.546  -0.812
+attr(,"conf.level")
+[1] 0.95
+
+
+
+
+
