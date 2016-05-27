@@ -11,8 +11,8 @@ source('util/methods.R')
 options(scipen=4)
 options(digits=3)
 
-pdf("./sink/ExpListOfGene.pdf")
-sink("./sink/ExpListOfGene.txt")
+pdf("./sink/ExpChisq.pdf")
+sink("./sink/ExpChisq.txt")
 
 # Create CGDS object
 mycgds = CGDS("http://www.cbioportal.org/")
@@ -66,16 +66,6 @@ clinData_DT <- clinDataRaw_DT[, .(
     'PR'= lapply(PR_STATUS_BY_IHC, testClinAttr, falsePattern='Negative'),
     'micromets'= lapply(MICROMET_DETECTION_BY_IHC, testClinAttr, falsePattern='NO')
     )]
-# clinData_DT <- clinDataRaw_DT[, .(
-#     case,
-#     'metastasis'= AJCC_METASTASIS_PATHOLOGIC_PM,
-#     'nodes'= substr(AJCC_NODES_PATHOLOGIC_PN, 1,2),
-#     'stage'= AJCC_PATHOLOGIC_TUMOR_STAGE, #lapply(AJCC_PATHOLOGIC_TUMOR_STAGE, testStage),
-#     'ER'= ER_STATUS_BY_IHC,
-#     'HER2'= IHC_HER2,
-#     'PR'= PR_STATUS_BY_IHC,
-#     'micromets'= MICROMET_DETECTION_BY_IHC
-#     )]
 
 # Get available genetic profiles
 mygeneticprofile <- getGeneticProfiles(mycgds,mycancerstudy)[4,1]
@@ -84,7 +74,7 @@ mygeneticprofile <- getGeneticProfiles(mycgds,mycancerstudy)[4,1]
 #  [2] "Methylation (HM27) beta-values for genes in 343 cases. For genes with multiple methylation probes, the probe most anti-correlated with expression."
 #  [3] "Relative linear copy-number values for each gene (from Affymetrix SNP6)."
 #  [4] "mRNA z-Scores (RNA Seq V2 RSEM) compared to the expression distribution of each gene tumors that are diploid for this gene."
-#  [5] "Expression levels for 20532 genes in 1212 brca cases (RNA Seq V2 RSEM)."  not normalized
+#  [5] "Expression levels for 20532 genes in 1212 brca cases (RNA Seq V2 RSEM)."
 #  [6] "mRNA z-Scores (Agilent microarray) compared to the expression distribution of each gene tumors that are diploid for this gene."
 #  [7] "Putative copy-number calls on 1080 cases determined using GISTIC 2.0. Values: -2 = homozygous deletion; -1 = hemizygous deletion; 0 = neutral / no change; 1 = gain; 2 = high level amplification."
 #  [8] "Protein expression, measured by reverse-phase protein array, Z-scores"
@@ -96,48 +86,94 @@ mygeneticprofile <- getGeneticProfiles(mycgds,mycancerstudy)[4,1]
 
 # Get genetic profile
 listOfGenes <- c('CACNG4', 'GNA13', 'SPAG5', 'SRSF7', 'CHD1', 'TP53', 'TBX2', 'RAD51C')
-expData <- getProfileData(mycgds, listOfGenes, mygeneticprofile,mycaselist)
+cnaData <- getProfileData(mycgds, listOfGenes, mygeneticprofile,mycaselist)
 
-# > lapply(expData, function(x) return(summary(x)))
+# > lapply(cnaData, function(x) return(summary(factor(x))))
 # $CACNG4
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.       # CACNG4 is a potental oncogene
-#   -1.04   -0.78   -0.20    0.33    0.80   24.10
+#  -1   0   1   2
+# 141 510 335  94
 #
 # $CHD1
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.       # CHD1 is a tumor suppressor
-#   -1.20   -0.58   -0.27   -0.06    0.18   14.40
+#  -2  -1   0   1   2
+#   9 270 603 196   2
 #
 # $GNA13
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # GNA13 is a potential ooncogene
-#   -2.46   -0.57    0.20    0.57    1.15   18.80
+#  -1   0   1   2
+# 153 512 333  82
 #
 # $RAD51C
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # RAD51C mutation related to cancer
-#   -2.15   -0.55    0.02    0.49    0.98   22.50
+#  -2  -1   0   1   2
+#   2 177 515 297  89
 #
 # $SPAG5
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.      # SPAG5 is a potential oncogene
-#   -1.25   -0.57    0.09    0.56    1.10   19.50
+#  -2  -1   0   1   2
+#   3 268 522 236  51
 #
 # $SRSF7
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # SFRS7 mutation may be related to cancer
-#   -2.29   -0.67   -0.14    0.05    0.59    6.22
+#  -2  -1   0   1   2
+#   2 173 741 154  10
 #
 # $TBX2
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # TBX2 is a tumor suppressor But many gained but is in fact lossed
-#   -0.80   -0.42   -0.21    0.00    0.17   18.50
+#  -2  -1   0   1   2
+#   1 152 505 316 106
 #
 # $TP53
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # TP53 is a tumor suppressor
-#   -2.20   -1.00   -0.38   -0.24    0.30    5.73
+#  -2  -1   0   1   2
+#  14 643 368  54   1
 
-expData_DT <- data.table(expData)[, ':='(
-    'case' = row.names(expData)
+cnaData_DT <- data.table(cnaData)[, ':='(
+    'case' = row.names(cnaData),
+    # true -> hypothesized disease associated CNA
+    'CACNG4' = (CACNG4 > 0),    # CACNG4 is a potental oncogene
+    'GNA13' = (GNA13 > 0),      # GNA13 is a potential ooncogene
+    'RAD51C' = (RAD51C > 0),    # RAD51C mutation related to cancer
+    'SPAG5' = (SPAG5 > 0),      # SPAG5 is a potential oncogene
+    'SRSF7' = (SRSF7 > 0),# SFRS7 mutation may be related to cancer
+    'CHD1' = (CHD1 > 0),       # CHD1 is a tumor suppressor
+    'TP53' = (TP53 >  0),       # TP53 is a tumor suppressor
+    'TBX2' = (TBX2 > 0)        # TBX2 is a tumor suppressor But many gained.
     )]
 
+# > summary(cnaData_DT)
+#    CACNG4           CHD1           GNA13           RAD51C
+#  Mode :logical   Mode :logical   Mode :logical   Mode :logical
+#  FALSE:986       FALSE:801       FALSE:998       FALSE:991
+#  TRUE :94        TRUE :279       TRUE :82        TRUE :89
+#  NA's :0         NA's :0         NA's :0         NA's :0
+#    SPAG5           SRSF7            TBX2            TP53
+#  Mode :logical   Mode :logical   Mode :logical   Mode :logical
+#  FALSE:1029      FALSE:916       FALSE:974       FALSE:423
+#  TRUE :51        TRUE :164       TRUE :106       TRUE :657
+#  NA's :0         NA's :0         NA's :0         NA's :0
 
-# inner joining clinical data and mRNA expression data
-DT <- merge(clinData_DT, expData_DT, by='case')
+# inner joining clinical data and cna data
+DT <- merge(clinData_DT, cnaData_DT, by='case')
+# case metastasis nodes     stage ER HER2 PR micromets CACNG4
+# 1: TCGA.3C.AAAU.01         NA    NA           NA   NA NA        NA  FALSE
+# 2: TCGA.3C.AALI.01          0     1  Stage II  1    1  1        NA   TRUE
+# 3: TCGA.3C.AALJ.01          0     1  Stage II  1    1  1        NA   TRUE
+# 4: TCGA.3C.AALK.01          0     0   Stage I  1    1  1         1   TRUE
+# 5: TCGA.4H.AAAK.01          0     1 Stage III  1    1  1         0  FALSE
+# ---
+# 1076: TCGA.WT.AB44.01          1     0   Stage I  1    0  1        NA  FALSE
+# 1077: TCGA.XX.A899.01          1     1 Stage III  1    0  1         0  FALSE
+# 1078: TCGA.XX.A89A.01          1     0  Stage II  1    0  1        NA  FALSE
+# 1079: TCGA.Z7.A8R5.01          1     1 Stage III  1    0  1         1  FALSE
+# 1080: TCGA.Z7.A8R6.01          0     0   Stage I  1    0  1         1  FALSE
+# CHD1 GNA13 RAD51C SPAG5 SRSF7  TBX2  TP53
+# 1: FALSE FALSE  FALSE FALSE FALSE FALSE  TRUE
+# 2:  TRUE  TRUE   TRUE  TRUE  TRUE FALSE  TRUE
+# 3: FALSE FALSE   TRUE  TRUE  TRUE  TRUE  TRUE
+# 4: FALSE  TRUE   TRUE FALSE FALSE  TRUE  TRUE
+# 5: FALSE FALSE  FALSE FALSE FALSE FALSE  TRUE
+# ---
+# 1076: FALSE FALSE  FALSE FALSE FALSE FALSE  TRUE
+# 1077: FALSE FALSE  FALSE FALSE FALSE FALSE FALSE
+# 1078: FALSE FALSE  FALSE FALSE FALSE FALSE  TRUE
+# 1079: FALSE FALSE  FALSE FALSE FALSE FALSE FALSE
+# 1080: FALSE FALSE  FALSE FALSE FALSE FALSE  TRUE
+
+
 genes <- list(CACNG4 = DT$CACNG4,
               GNA13 = DT$GNA13,
               RAD51C = DT$RAD51C,
@@ -146,6 +182,7 @@ genes <- list(CACNG4 = DT$CACNG4,
               CHD1 = DT$CHD1,
               TP53 = DT$TP53,
               TBX2 = DT$TBX2)
+
 # UNLIST is very important to enable sort.list (when constructing table), have to convert list -> atomic
 clinAttr <- list(metastasis = unlist(DT$metastasis),
                  nodes = unlist(DT$nodes),
@@ -156,29 +193,40 @@ clinAttr <- list(metastasis = unlist(DT$metastasis),
                  micromets = unlist(DT$micromets)
                  )
 
-
-rlist <- lapply(genes, function(gene){
-  plots <- lapply(clinAttr, function(clin){
+chisqlist <- lapply(genes, function(gene){
+  lapply(clinAttr, function(clin){
       dtbl <- data.table(
         gene = gene,
         clinVar = clin
-      )
-      dtbl <- dtbl[!is.na(clinVar) & clinVar != '',][gene<quantile(dtbl$gene, 0.95)]
-      # boxplot(gene ~ clinVar , data = dtbl, ylab = "expresion z score") #, outline=FALSE)
-      print(summary(lm(gene ~ clinVar, data = dtbl)))
-      print(ggplot(dtbl, aes(clinVar, gene)) + geom_point(size = 0.05) + geom_boxplot() + geom_jitter(width=0.25))
+      )[!is.na(clinVar) & clinVar != '',]
+      tbl <- table(gene = dtbl$gene, clinVar = dtbl$clinVar)
+      print(tbl)
+      return(chisq.test(tbl)$p.value)
     })
-  # multiplot(plotlist = plots[1:2], cols = 2)
-  # multiplot(plotlist = plots[3:4], cols = 2)
-  # multiplot(plotlist = plots[5:6], cols = 2)
-  # multiplot(plotlist = plots[7], cols = 2)
 })
-#
-# chisqdf <- data.frame(matrix(unlist(chisqlist), ncol=length(clinAttr), byrow=TRUE))
-# colnames(chisqdf) <- names(clinAttr)
-# rownames(chisqdf) <- names(genes)
-#
-# print(chisqdf)
+
+chisqdf <- data.frame(matrix(unlist(chisqlist), ncol=length(clinAttr), byrow=TRUE))
+colnames(chisqdf) <- names(clinAttr)
+rownames(chisqdf) <- names(genes)
+
+print(chisqdf)
 
 
+fishlist <- lapply(genes, function(gene){
+  lapply(clinAttr, function(clin){
+      dtbl <- data.table(
+        gene = gene,
+        clinVar = clin
+      )[!is.na(clinVar) & clinVar != '',]
+      tbl <- table(gene = dtbl$gene, clinVar = dtbl$clinVar)
+      return(fisher.test(tbl, simulate.p.value=TRUE)$p.value)
+    })
+})
+
+fishdf <- data.frame(matrix(unlist(fishlist), ncol=length(clinAttr), byrow=TRUE))
+colnames(fishdf) <- names(clinAttr)
+rownames(fishdf) <- names(genes)
+
+
+print(fishdf)
 dev.off()

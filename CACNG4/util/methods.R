@@ -72,9 +72,6 @@ testClinAttr <- function(x, falsePattern) {
     return(TRUE)}
 }
 
-testMets <- function(x){
-  if(grepl())
-}
 
 testStage <- function(x){
   if(grepl('II|X|IV', x)){

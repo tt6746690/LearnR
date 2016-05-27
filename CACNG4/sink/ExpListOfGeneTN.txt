@@ -1,0 +1,1034 @@
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.224 -0.199 -0.149  0.120  0.766 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.81337    0.02917  -27.88   <2e-16 ***
+clinVarTRUE -0.00194    0.07649   -0.03     0.98    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.283 on 108 degrees of freedom
+Multiple R-squared:  5.93e-06,	Adjusted R-squared:  -0.00925 
+F-statistic: 0.000641 on 1 and 108 DF,  p-value: 0.98
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.275 -0.190 -0.142  0.130  0.796 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.8431     0.0335  -25.19   <2e-16 ***
+clinVarTRUE   0.0811     0.0555    1.46     0.15    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.28 on 108 degrees of freedom
+Multiple R-squared:  0.0194,	Adjusted R-squared:  0.0103 
+F-statistic: 2.13 on 1 and 108 DF,  p-value: 0.147
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.4293 -0.1592 -0.1066  0.0926  0.7501 
+
+Coefficients:
+                  Estimate Std. Error t value    Pr(>|t|)    
+(Intercept)        -0.5902     0.0949   -6.22 0.000000012 ***
+clinVarStage IA    -0.2271     0.1304   -1.74       0.085 .  
+clinVarStage II    -0.4287     0.2847   -1.51       0.135    
+clinVarStage IIA   -0.2654     0.1024   -2.59       0.011 *  
+clinVarStage IIB   -0.2930     0.1123   -2.61       0.011 *  
+clinVarStage IIIA  -0.0601     0.1206   -0.50       0.620    
+clinVarStage IIIB  -0.4395     0.1817   -2.42       0.017 *  
+clinVarStage IIIC  -0.4202     0.2122   -1.98       0.051 .  
+clinVarStage IV    -0.2169     0.2122   -1.02       0.309    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.268 on 98 degrees of freedom
+Multiple R-squared:  0.144,	Adjusted R-squared:  0.0736 
+F-statistic: 2.05 on 8 and 98 DF,  p-value: 0.0479
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.223 -0.198 -0.148  0.119  0.766 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.8137     0.0268   -30.3   <2e-16 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.282 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.223 -0.198 -0.148  0.119  0.766 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.8137     0.0268   -30.3   <2e-16 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.282 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.223 -0.198 -0.148  0.119  0.766 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.8137     0.0268   -30.3   <2e-16 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.282 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.198 -0.170 -0.133  0.094  0.746 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.8394     0.0377   -22.3   <2e-16 ***
+clinVarTRUE  -0.0118     0.0595    -0.2     0.84    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.261 on 78 degrees of freedom
+Multiple R-squared:  0.000502,	Adjusted R-squared:  -0.0123 
+F-statistic: 0.0392 on 1 and 78 DF,  p-value: 0.844
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.222 -0.841 -0.170  0.722  3.146 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0804     0.1270    0.63     0.53
+clinVarTRUE  -0.1277     0.3330   -0.38     0.70
+
+Residual standard error: 1.23 on 108 degrees of freedom
+Multiple R-squared:  0.00136,	Adjusted R-squared:  -0.00789 
+F-statistic: 0.147 on 1 and 108 DF,  p-value: 0.702
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.247 -0.821 -0.106  0.689  3.120 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)    0.106      0.146    0.72     0.47
+clinVarTRUE   -0.124      0.245   -0.51     0.61
+
+Residual standard error: 1.23 on 108 degrees of freedom
+Multiple R-squared:  0.00236,	Adjusted R-squared:  -0.00688 
+F-statistic: 0.255 on 1 and 108 DF,  p-value: 0.614
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.2657 -0.8838 -0.0354  0.6270  3.0083 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)          0.408      0.397    1.03    0.308  
+clinVarStage IA     -0.137      0.548   -0.25    0.803  
+clinVarStage II     -2.129      1.257   -1.69    0.093 .
+clinVarStage IIA    -0.398      0.435   -0.92    0.362  
+clinVarStage IIB    -0.190      0.479   -0.40    0.693  
+clinVarStage IIIA   -0.362      0.517   -0.70    0.485  
+clinVarStage IIIB   -1.714      0.795   -2.16    0.033 *
+clinVarStage IIIC   -1.497      0.795   -1.88    0.063 .
+clinVarStage IV     -0.353      0.932   -0.38    0.705  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.19 on 98 degrees of freedom
+Multiple R-squared:  0.0959,	Adjusted R-squared:  0.0221 
+F-statistic:  1.3 on 8 and 98 DF,  p-value: 0.253
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.203 -0.867 -0.155  0.717  3.164 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0618     0.1169    0.53      0.6
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.23 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.203 -0.867 -0.155  0.717  3.164 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0618     0.1169    0.53      0.6
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.23 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.203 -0.867 -0.155  0.717  3.164 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0618     0.1169    0.53      0.6
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.23 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.001 -0.806 -0.288  0.726  3.160 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -0.140      0.173   -0.81     0.42
+clinVarTRUE    0.171      0.273    0.63     0.53
+
+Residual standard error: 1.21 on 80 degrees of freedom
+Multiple R-squared:  0.00486,	Adjusted R-squared:  -0.00757 
+F-statistic: 0.391 on 1 and 80 DF,  p-value: 0.534
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.185 -0.767 -0.152  0.708  2.653 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0345     0.1115    0.31     0.76
+clinVarTRUE   0.0408     0.2837    0.14     0.89
+
+Residual standard error: 1.08 on 108 degrees of freedom
+Multiple R-squared:  0.000192,	Adjusted R-squared:  -0.00907 
+F-statistic: 0.0207 on 1 and 108 DF,  p-value: 0.886
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.288 -0.715 -0.164  0.605  2.803 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)    0.137      0.130    1.06     0.29
+clinVarTRUE   -0.252      0.210   -1.20     0.23
+
+Residual standard error: 1.07 on 108 degrees of freedom
+Multiple R-squared:  0.0132,	Adjusted R-squared:  0.00406 
+F-statistic: 1.44 on 1 and 108 DF,  p-value: 0.232
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4100 -0.6722 -0.0637  0.7223  2.4283 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)          0.340      0.363    0.94     0.35
+clinVarStage IA     -0.257      0.513   -0.50     0.62
+clinVarStage II     -1.010      1.147   -0.88     0.38
+clinVarStage IIA    -0.081      0.397   -0.20     0.84
+clinVarStage IIB    -0.441      0.433   -1.02     0.31
+clinVarStage IIIA   -0.721      0.472   -1.53     0.13
+clinVarStage IIIB   -0.960      0.726   -1.32     0.19
+clinVarStage IIIC   -0.398      0.726   -0.55     0.58
+clinVarStage IV     -0.790      0.851   -0.93     0.36
+
+Residual standard error: 1.09 on 98 degrees of freedom
+Multiple R-squared:  0.065,	Adjusted R-squared:  -0.0113 
+F-statistic: 0.852 on 8 and 98 DF,  p-value: 0.56
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.192 -0.774 -0.154  0.701  2.647 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0408     0.1021     0.4     0.69
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.07 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.192 -0.774 -0.154  0.701  2.647 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0408     0.1021     0.4     0.69
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.07 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.192 -0.774 -0.154  0.701  2.647 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   0.0408     0.1021     0.4     0.69
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.07 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.244 -0.687 -0.183  0.641  2.422 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)  -0.0247     0.1453   -0.17     0.87
+clinVarTRUE   0.1174     0.2335    0.50     0.62
+
+Residual standard error: 1.02 on 78 degrees of freedom
+Multiple R-squared:  0.00323,	Adjusted R-squared:  -0.00955 
+F-statistic: 0.253 on 1 and 78 DF,  p-value: 0.616
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0837 -0.7180  0.0318  0.5985  2.6549 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    0.890      0.101    8.80  2.4e-14 ***
+clinVarTRUE   -0.126      0.257   -0.49     0.63    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.975 on 108 degrees of freedom
+Multiple R-squared:  0.0022,	Adjusted R-squared:  -0.00704 
+F-statistic: 0.238 on 1 and 108 DF,  p-value: 0.626
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.104 -0.711  0.020  0.624  2.634 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.8468     0.1174    7.21    8e-11 ***
+clinVarTRUE   0.0636     0.1924    0.33     0.74    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.976 on 108 degrees of freedom
+Multiple R-squared:  0.00101,	Adjusted R-squared:  -0.00824 
+F-statistic: 0.109 on 1 and 108 DF,  p-value: 0.742
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.166 -0.594 -0.034  0.610  2.434 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)         0.7618     0.3224    2.36     0.02 *
+clinVarStage IA    -0.4201     0.4445   -0.95     0.35  
+clinVarStage II    -0.8826     1.0196   -0.87     0.39  
+clinVarStage IIA    0.3493     0.3526    0.99     0.32  
+clinVarStage IIB    0.2251     0.3883    0.58     0.56  
+clinVarStage IIIA   0.0181     0.4195    0.04     0.97  
+clinVarStage IIIB  -0.9274     0.6449   -1.44     0.15  
+clinVarStage IIIC   0.0167     0.6449    0.03     0.98  
+clinVarStage IV    -0.2261     0.7562   -0.30     0.77  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.967 on 98 degrees of freedom
+Multiple R-squared:  0.102,	Adjusted R-squared:  0.0284 
+F-statistic: 1.39 on 8 and 98 DF,  p-value: 0.211
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0643 -0.7163  0.0512  0.6179  2.6743 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.8705     0.0926     9.4    1e-15 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.972 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0643 -0.7163  0.0512  0.6179  2.6743 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.8705     0.0926     9.4    1e-15 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.972 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0643 -0.7163  0.0512  0.6179  2.6743 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.8705     0.0926     9.4    1e-15 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.972 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.9828 -0.7843  0.0555  0.6929  2.4048 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    0.642      0.139    4.62 0.000015 ***
+clinVarTRUE    0.461      0.222    2.08    0.041 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.963 on 77 degrees of freedom
+Multiple R-squared:  0.0531,	Adjusted R-squared:  0.0408 
+F-statistic: 4.32 on 1 and 77 DF,  p-value: 0.041
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4140 -0.7232 -0.0649  0.7338  3.0401 
+
+Coefficients:
+            Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)    0.576      0.115    5.01 0.0000021 ***
+clinVarTRUE    0.123      0.292    0.42      0.67    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.11 on 108 degrees of freedom
+Multiple R-squared:  0.00164,	Adjusted R-squared:  -0.0076 
+F-statistic: 0.178 on 1 and 108 DF,  p-value: 0.674
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.3510 -0.7410 -0.0377  0.8188  2.9723 
+
+Coefficients:
+            Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)    0.644      0.133    4.83 0.0000046 ***
+clinVarTRUE   -0.131      0.218   -0.60      0.55    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.11 on 108 degrees of freedom
+Multiple R-squared:  0.00331,	Adjusted R-squared:  -0.00592 
+F-statistic: 0.359 on 1 and 108 DF,  p-value: 0.55
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.579 -0.759  0.000  0.813  2.868 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)        -0.0307     0.3971   -0.08    0.939  
+clinVarStage IA     0.6480     0.5458    1.19    0.238  
+clinVarStage II     1.1175     1.1913    0.94    0.351  
+clinVarStage IIA    0.7783     0.4289    1.81    0.073 .
+clinVarStage IIB    0.6777     0.4699    1.44    0.152  
+clinVarStage IIIA   0.7715     0.5047    1.53    0.130  
+clinVarStage IIIB   0.1052     0.7604    0.14    0.890  
+clinVarStage IIIC   0.0344     0.7604    0.05    0.964  
+clinVarStage IV    -0.1009     0.8879   -0.11    0.910  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.12 on 98 degrees of freedom
+Multiple R-squared:  0.0589,	Adjusted R-squared:  -0.018 
+F-statistic: 0.766 on 8 and 98 DF,  p-value: 0.633
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4331 -0.7070 -0.0776  0.7505  3.0210 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value   Pr(>|t|)    
+(Intercept)    0.595      0.105    5.65 0.00000013 ***
+clinVarTRUE       NA         NA      NA         NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.1 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4331 -0.7070 -0.0776  0.7505  3.0210 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value   Pr(>|t|)    
+(Intercept)    0.595      0.105    5.65 0.00000013 ***
+clinVarTRUE       NA         NA      NA         NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.1 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4331 -0.7070 -0.0776  0.7505  3.0210 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value   Pr(>|t|)    
+(Intercept)    0.595      0.105    5.65 0.00000013 ***
+clinVarTRUE       NA         NA      NA         NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.1 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.5042 -0.8100 -0.0213  0.6997  2.7672 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)    0.430      0.159    2.71   0.0083 **
+clinVarTRUE    0.419      0.255    1.64   0.1048   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.11 on 78 degrees of freedom
+Multiple R-squared:  0.0334,	Adjusted R-squared:  0.021 
+F-statistic: 2.69 on 1 and 78 DF,  p-value: 0.105
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5447 -0.1685 -0.0534  0.2034  0.5423 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.6016     0.0250  -24.09   <2e-16 ***
+clinVarTRUE  -0.0470     0.0655   -0.72     0.47    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.242 on 108 degrees of freedom
+Multiple R-squared:  0.00475,	Adjusted R-squared:  -0.00447 
+F-statistic: 0.515 on 1 and 108 DF,  p-value: 0.474
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5331 -0.1684 -0.0463  0.2011  0.5539 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.6132     0.0284  -21.60   <2e-16 ***
+clinVarTRUE   0.0143     0.0490    0.29     0.77    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.243 on 108 degrees of freedom
+Multiple R-squared:  0.000792,	Adjusted R-squared:  -0.00846 
+F-statistic: 0.0856 on 1 and 108 DF,  p-value: 0.77
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.4687 -0.1512 -0.0306  0.1473  0.5639 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.52883    0.08042   -6.58  2.3e-09 ***
+clinVarStage IA   -0.07916    0.11085   -0.71    0.477    
+clinVarStage II   -0.56307    0.25432   -2.21    0.029 *  
+clinVarStage IIA  -0.09434    0.08764   -1.08    0.284    
+clinVarStage IIB  -0.08180    0.09612   -0.85    0.397    
+clinVarStage IIIA -0.00945    0.10639   -0.09    0.929    
+clinVarStage IIIB -0.22143    0.16084   -1.38    0.172    
+clinVarStage IIIC -0.15682    0.18861   -0.83    0.408    
+clinVarStage IV   -0.17987    0.18861   -0.95    0.343    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.241 on 99 degrees of freedom
+Multiple R-squared:  0.0726,	Adjusted R-squared:  -0.00239 
+F-statistic: 0.968 on 8 and 99 DF,  p-value: 0.465
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5379 -0.1617 -0.0511  0.2070  0.5491 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   -0.608      0.023   -26.4   <2e-16 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.242 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5379 -0.1617 -0.0511  0.2070  0.5491 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   -0.608      0.023   -26.4   <2e-16 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.242 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5379 -0.1617 -0.0511  0.2070  0.5491 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   -0.608      0.023   -26.4   <2e-16 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.242 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5024 -0.1635 -0.0514  0.1773  0.5303 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.6440     0.0343   -18.8   <2e-16 ***
+clinVarTRUE   0.0545     0.0545     1.0     0.32    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.243 on 81 degrees of freedom
+Multiple R-squared:  0.0122,	Adjusted R-squared:  2.59e-05 
+F-statistic:    1 on 1 and 81 DF,  p-value: 0.32
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.119 -1.565 -0.483  1.301  3.973 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -0.281      0.174   -1.62     0.11
+clinVarTRUE    0.552      0.487    1.13     0.26
+
+Residual standard error: 1.7 on 108 degrees of freedom
+Multiple R-squared:  0.0118,	Adjusted R-squared:  0.0026 
+F-statistic: 1.28 on 1 and 108 DF,  p-value: 0.26
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-1.974 -1.555 -0.533  1.483  3.856 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -0.164      0.206   -0.80     0.43
+clinVarTRUE   -0.127      0.337   -0.38     0.71
+
+Residual standard error: 1.71 on 108 degrees of freedom
+Multiple R-squared:  0.0013,	Adjusted R-squared:  -0.00795 
+F-statistic: 0.141 on 1 and 108 DF,  p-value: 0.708
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.669 -1.295 -0.511  1.257  3.992 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)        -0.7427     0.5458   -1.36    0.177  
+clinVarStage IA     1.7281     0.7719    2.24    0.027 *
+clinVarStage II     3.1354     1.7260    1.82    0.072 .
+clinVarStage IIA    0.1580     0.5948    0.27    0.791  
+clinVarStage IIB    0.6518     0.6626    0.98    0.328  
+clinVarStage IIIA   0.2501     0.7100    0.35    0.725  
+clinVarStage IIIB  -0.0332     1.0916   -0.03    0.976  
+clinVarStage IIIC   2.4399     1.0916    2.24    0.028 *
+clinVarStage IV     1.4828     1.2800    1.16    0.249  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.64 on 98 degrees of freedom
+Multiple R-squared:  0.143,	Adjusted R-squared:  0.0726 
+F-statistic: 2.04 on 8 and 98 DF,  p-value: 0.0497
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-1.985 -1.596 -0.486  1.465  3.903 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -0.211      0.162    -1.3      0.2
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.7 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-1.985 -1.596 -0.486  1.465  3.903 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -0.211      0.162    -1.3      0.2
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.7 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-1.985 -1.596 -0.486  1.465  3.903 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -0.211      0.162    -1.3      0.2
+clinVarTRUE       NA         NA      NA       NA
+
+Residual standard error: 1.7 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.035 -1.530 -0.655  1.597  3.827 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -0.319      0.248   -1.29     0.20
+clinVarTRUE    0.229      0.405    0.57     0.57
+
+Residual standard error: 1.75 on 78 degrees of freedom
+Multiple R-squared:  0.00408,	Adjusted R-squared:  -0.00869 
+F-statistic: 0.32 on 1 and 78 DF,  p-value: 0.573
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.464 -0.282 -0.124  0.182  1.315 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.2839     0.0419   -6.77  6.9e-10 ***
+clinVarTRUE   0.0154     0.1135    0.14     0.89    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.409 on 108 degrees of freedom
+Multiple R-squared:  0.000169,	Adjusted R-squared:  -0.00909 
+F-statistic: 0.0183 on 1 and 108 DF,  p-value: 0.893
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.493 -0.292 -0.124  0.196  1.311 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.2981     0.0491   -6.07    2e-08 ***
+clinVarTRUE   0.0437     0.0805    0.54     0.59    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.408 on 108 degrees of freedom
+Multiple R-squared:  0.00272,	Adjusted R-squared:  -0.00651 
+F-statistic: 0.295 on 1 and 108 DF,  p-value: 0.588
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.481 -0.287 -0.114  0.183  1.316 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)       -0.30152    0.13856   -2.18    0.032 *
+clinVarStage IA    0.03834    0.19100    0.20    0.841  
+clinVarStage II   -0.34848    0.43818   -0.80    0.428  
+clinVarStage IIA  -0.00151    0.15052   -0.01    0.992  
+clinVarStage IIB   0.03455    0.16821    0.21    0.838  
+clinVarStage IIIA  0.08119    0.18330    0.44    0.659  
+clinVarStage IIIB  0.77312    0.43818    1.76    0.081 .
+clinVarStage IIIC  0.03072    0.27713    0.11    0.912  
+clinVarStage IV    0.17377    0.32496    0.53    0.594  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.416 on 98 degrees of freedom
+Multiple R-squared:  0.0465,	Adjusted R-squared:  -0.0314 
+F-statistic: 0.597 on 8 and 98 DF,  p-value: 0.778
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.466 -0.278 -0.126  0.184  1.313 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.2818     0.0388   -7.27  5.9e-11 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.407 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.466 -0.278 -0.126  0.184  1.313 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.2818     0.0388   -7.27  5.9e-11 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.407 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.466 -0.278 -0.126  0.184  1.313 
+
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.2818     0.0388   -7.27  5.9e-11 ***
+clinVarTRUE       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.407 on 109 degrees of freedom
+
+
+Call:
+lm(formula = gene ~ clinVar, data = dtbl)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.530 -0.299 -0.112  0.151  1.318 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -0.2182     0.0630   -3.46  0.00088 ***
+clinVarTRUE  -0.0689     0.1006   -0.68  0.49574    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.437 on 77 degrees of freedom
+Multiple R-squared:  0.00605,	Adjusted R-squared:  -0.00686 
+F-statistic: 0.468 on 1 and 77 DF,  p-value: 0.496
+
