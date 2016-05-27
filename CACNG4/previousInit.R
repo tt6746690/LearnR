@@ -1,3 +1,4 @@
+rm(list=ls())
 library('cgdsr')
 library('ggplot2')
 library('data.table')
@@ -19,7 +20,7 @@ getCancerStudies(mycgds)
 mycancerstudy = getCancerStudies(mycgds)[20,1]   # number 20 is brca-tcga
 print('a list of cancer stufies')
 print(getCancerStudies(mycgds))
-mycaselist = getCaseLists(mycgds,mycancerstudy)[1,1]
+mycaselist = getCaseLists(mycgds,mycancerstudy)[4,1]
 
 
 # Get available genetic profiles
@@ -187,3 +188,5 @@ chisq.test(tumor_stg_tbl_gain) # p value = 0.4 not gonna work
 # # odds ratio =  1.37981118373275   95 % confidence interval = [ 0.871814227595667 , 2.18381260879923 ]
 # calcOddsRatio(mymatrix, alpha=0.05)
 # dev.off()
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help

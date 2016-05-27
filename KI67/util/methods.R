@@ -68,7 +68,7 @@ generateStatistics <- function(DT, manual_DT){
   print(mean(difference)-1.96*sd(difference))
   print(mean(difference)+1.96*sd(difference))
 
-  # 95 percent confidence interval of mean of difference
+  # 95 percent confidence interval sof mean of difference
   cat('\nz test confidence interval (if does not contain 0 -> exists bias):\n')
   print(z.test(difference, sigma.x=sd(difference))$conf.int)
   cat('\n\n\n\n\n')

@@ -1,0 +1,275 @@
+       clinVar
+gene    FALSE TRUE
+  FALSE   815  169
+  TRUE     80   14
+       clinVar
+gene    FALSE TRUE
+  FALSE   470  514
+  TRUE     36   58
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      86       79        5        6       319       225         2
+  TRUE        3        4        1        0        33        28         0
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE        142         25         61       17      10
+  TRUE          13          2          4        3       2
+       clinVar
+gene    FALSE TRUE
+  FALSE   218  766
+  TRUE     15   79
+       clinVar
+gene    FALSE TRUE
+  FALSE   522  455
+  TRUE     33   60
+       clinVar
+gene    FALSE TRUE
+  FALSE   302  682
+  TRUE     36   58
+       clinVar
+gene    FALSE TRUE
+  FALSE   416  255
+  TRUE     40   20
+       clinVar
+gene    FALSE TRUE
+  FALSE   823  173
+  TRUE     72   10
+       clinVar
+gene    FALSE TRUE
+  FALSE   475  521
+  TRUE     31   51
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      87       79        5        6       320       229         2
+  TRUE        2        4        1        0        32        24         0
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE        144         25         61       20      10
+  TRUE          11          2          4        0       2
+       clinVar
+gene    FALSE TRUE
+  FALSE   216  780
+  TRUE     17   65
+       clinVar
+gene    FALSE TRUE
+  FALSE   529  460
+  TRUE     26   55
+       clinVar
+gene    FALSE TRUE
+  FALSE   308  688
+  TRUE     30   52
+       clinVar
+gene    FALSE TRUE
+  FALSE   418  260
+  TRUE     38   15
+       clinVar
+gene    FALSE TRUE
+  FALSE   816  173
+  TRUE     79   10
+       clinVar
+gene    FALSE TRUE
+  FALSE   473  516
+  TRUE     33   56
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      87       79        5        6       317       231         2
+  TRUE        2        4        1        0        35        22         0
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE        141         25         60       17      11
+  TRUE          14          2          5        3       1
+       clinVar
+gene    FALSE TRUE
+  FALSE   223  766
+  TRUE     10   79
+       clinVar
+gene    FALSE TRUE
+  FALSE   527  455
+  TRUE     28   60
+       clinVar
+gene    FALSE TRUE
+  FALSE   306  683
+  TRUE     32   57
+       clinVar
+gene    FALSE TRUE
+  FALSE   420  258
+  TRUE     36   17
+       clinVar
+gene    FALSE TRUE
+  FALSE   852  175
+  TRUE     43    8
+       clinVar
+gene    FALSE TRUE
+  FALSE   482  545
+  TRUE     24   27
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      84       80        6        6       336       238         2
+  TRUE        5        3        0        0        16        15         0
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE        151         24         63       18      11
+  TRUE           4          3          2        2       1
+       clinVar
+gene    FALSE TRUE
+  FALSE   218  809
+  TRUE     15   36
+       clinVar
+gene    FALSE TRUE
+  FALSE   545  475
+  TRUE     10   40
+       clinVar
+gene    FALSE TRUE
+  FALSE   315  712
+  TRUE     23   28
+       clinVar
+gene    FALSE TRUE
+  FALSE   434  264
+  TRUE     22   11
+       clinVar
+gene    FALSE TRUE
+  FALSE   756  158
+  TRUE    139   25
+       clinVar
+gene    FALSE TRUE
+  FALSE   426  488
+  TRUE     80   84
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      79       73        6        5       291       215         2
+  TRUE       10       10        0        1        61        38         0
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE        134         23         54       16      11
+  TRUE          21          4         11        4       1
+       clinVar
+gene    FALSE TRUE
+  FALSE   141  773
+  TRUE     92   72
+       clinVar
+gene    FALSE TRUE
+  FALSE   468  439
+  TRUE     87   76
+       clinVar
+gene    FALSE TRUE
+  FALSE   229  685
+  TRUE    109   55
+       clinVar
+gene    FALSE TRUE
+  FALSE   386  237
+  TRUE     70   38
+       clinVar
+gene    FALSE TRUE
+  FALSE   653  146
+  TRUE    242   37
+       clinVar
+gene    FALSE TRUE
+  FALSE   361  438
+  TRUE    145  134
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      69       67        6        4       244       182         2
+  TRUE       20       16        0        2       108        71         0
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE        122         20         54       15       9
+  TRUE          33          7         11        5       3
+       clinVar
+gene    FALSE TRUE
+  FALSE    79  720
+  TRUE    154  125
+       clinVar
+gene    FALSE TRUE
+  FALSE   407  386
+  TRUE    148  129
+       clinVar
+gene    FALSE TRUE
+  FALSE   157  642
+  TRUE    181   98
+       clinVar
+gene    FALSE TRUE
+  FALSE   337  205
+  TRUE    119   70
+       clinVar
+gene    FALSE TRUE
+  FALSE   347   76
+  TRUE    548  107
+       clinVar
+gene    FALSE TRUE
+  FALSE   204  219
+  TRUE    302  353
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      40       37        5        1       145        88         1
+  TRUE       49       46        1        5       207       165         1
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE         56         12         22        8       5
+  TRUE          99         15         43       12       7
+       clinVar
+gene    FALSE TRUE
+  FALSE    76  347
+  TRUE    157  498
+       clinVar
+gene    FALSE TRUE
+  FALSE   241  178
+  TRUE    314  337
+       clinVar
+gene    FALSE TRUE
+  FALSE   102  321
+  TRUE    236  419
+       clinVar
+gene    FALSE TRUE
+  FALSE   184  124
+  TRUE    272  151
+       clinVar
+gene    FALSE TRUE
+  FALSE   804  168
+  TRUE     91   15
+       clinVar
+gene    FALSE TRUE
+  FALSE   469  503
+  TRUE     37   69
+       clinVar
+gene    Stage I Stage IA Stage IB Stage II Stage IIA Stage IIB Stage III
+  FALSE      87       78        5        6       314       228         2
+  TRUE        2        5        1        0        38        25         0
+       clinVar
+gene    Stage IIIA Stage IIIB Stage IIIC Stage IV Stage X
+  FALSE        135         23         59       16      11
+  TRUE          20          4          6        4       1
+       clinVar
+gene    FALSE TRUE
+  FALSE   220  752
+  TRUE     13   93
+       clinVar
+gene    FALSE TRUE
+  FALSE   516  449
+  TRUE     39   66
+       clinVar
+gene    FALSE TRUE
+  FALSE   303  669
+  TRUE     35   71
+       clinVar
+gene    FALSE TRUE
+  FALSE   410  255
+  TRUE     46   20
+       metastasis  nodes stage       ER       HER2       PR micromets
+CACNG4     0.6752 0.0992 0.481 2.06e-01 0.00136955 1.61e-01     0.564
+GNA13      0.2953 0.1076 0.402 9.50e-01 0.00033263 3.48e-01     0.191
+RAD51C     0.1743 0.0665 0.575 1.88e-02 0.00013441 3.91e-01     0.473
+SPAG5      0.9519 1.0000 0.726 2.26e-01 0.00000766 4.41e-02     0.737
+SRSF7      0.5970 0.6684 0.891 7.51e-31 0.73945453 1.74e-25     0.647
+CHD1       0.0677 0.0592 0.196 7.42e-56 0.59338632 3.46e-44     0.917
+TP53       0.5396 0.5362 0.299 2.37e-02 0.00368238 5.10e-05     0.238
+TBX2       0.4967 0.0120 0.269 1.94e-02 0.00208860 7.80e-01     0.249
+       metastasis  nodes stage       ER       HER2       PR micromets
+CACNG4     0.6670 0.0841 0.358 1.90e-01 0.00105700 1.32e-01     0.578
+GNA13      0.2841 0.1066 0.313 1.00e+00 0.00028936 3.22e-01     0.185
+RAD51C     0.1427 0.0592 0.387 1.07e-02 0.00008633 3.41e-01     0.462
+SPAG5      1.0000 1.0000 0.524 1.66e-01 0.00000349 4.31e-02     0.714
+SRSF7      0.5734 0.6114 0.916 1.32e-26 0.73355332 5.31e-24     0.592
+CHD1       0.0637 0.0515 0.213 6.68e-51 0.57651350 2.13e-42     0.862
+TP53       0.5067 0.5320 0.293 2.29e-02 0.00322495 3.97e-05     0.217
+TBX2       0.4960 0.0102 0.138 1.27e-02 0.00192077 7.41e-01     0.231
+

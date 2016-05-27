@@ -9,8 +9,8 @@ library('GGally')
 # source('init.R')
 
 # sinks
-pdf("./sink/TCGA_CACNG4.pdf")
-sink("./sink/TCGA_CACNG4.txt")
+pdf("./sink/TCGA_CACNG4_KPplot.pdf")
+sink("./sink/TCGA_CACNG4_KPpplot.txt")
 
 # for total TCGA BRCA clinical dataset, not useful in this one gene but..
 #wget https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/brca/bcr/biotab/clin/nationwidechildrens.org_clinical_patient_brca.txt
