@@ -1,6 +1,6 @@
 # import
 library('ggplot2')
-library('wesanderson')
+# library('wesanderson')
 library('gridExtra')
 source('./util/methods.R')
 source('./util/multiplot.R')
@@ -51,6 +51,7 @@ idc2 <- idc2[,.(Sample.Name, ddCt, fold, category='IDC2')]
 # rbind concat data table with same colnames but different nrow()
 # b = rbind(ct, dcis1, dcis2, idc1, idc2)
 b = rbind(ct, dcis2, idc1)
+
 
 print(summary(dcis2$fold))
 dcis2$fold <- idc1$fold

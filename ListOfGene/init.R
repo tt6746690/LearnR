@@ -13,7 +13,7 @@ TMAscorePath= file.path(getwd(), 'data', 'TMAtable.txt')
 DT <- data.table(read.table(TMAscorePath, header=TRUE, sep = "\t",
        na.strings=c("NA", "N/A", "", "N"), stringsAsFactors=FALSE, strip.white=TRUE))
 
-geneScore_DT <- DT[, .(ID=paste(TMA, Column, Row, sep=''), CACNG4, SPAG5, CACNG4..NvsC, SFRS7, SFRS7.percent, CHD1, GA13)]
+geneScore_DT <- DT[, .(ID=paste(TMA, Column, Row, sep=''), SPAG5, CACNG4 = CACNG4..NvsC, SFRS7 = SFRS7.percent, CHD1, GNA13 = GA13)]
 TumorStat_DT <- DT[, .(ID=paste(TMA, Column, Row, sep=''), GRADE.nor, SIZE.nor, LVI, LN, ER, PR, HER.2, Type)]
 DT <- merge(geneScore_DT, TumorStat_DT, by='ID')
 DF <- data.frame(DT)
@@ -87,8 +87,8 @@ applyFisherTests <- function(x){
 
 
 
-chisq.tbl <- data.frame(lapply(DF[,2:8], applyChiSquaredTests))
-fisher.tbl <- data.frame(lapply(DF[,2:8], applyFisherTests))
+chisq.tbl <- data.frame(lapply(DF[,2:6], applyChiSquaredTests))
+fisher.tbl <- data.frame(lapply(DF[,2:6], applyFisherTests))
 
 cat('\n\nchi squared test p-value table\n\n')
 print(chisq.tbl)

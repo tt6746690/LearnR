@@ -85,7 +85,7 @@ mygeneticprofile <- getGeneticProfiles(mycgds,mycancerstudy)[7,1]
 
 
 # Get genetic profile
-listOfGenes <- c('CACNG4', 'GNA13', 'SPAG5', 'SRSF7', 'CHD1', 'TP53', 'TBX2', 'RAD51C')
+listOfGenes <- c('CACNG4', 'GNA13', 'WIPI1', 'SRSF7', 'CHD1', 'PITPNC1', 'TBX2', 'RAD51C', 'COIL')
 cnaData <- getProfileData(mycgds, listOfGenes, mygeneticprofile,mycaselist)
 
 # > lapply(cnaData, function(x) return(summary(factor(x))))
@@ -126,11 +126,12 @@ cnaData_DT <- data.table(cnaData)[, ':='(
     # true -> hypothesized disease associated CNA
     'CACNG4' = (CACNG4 == 2),    # CACNG4 is a potental oncogene
     'GNA13' = (GNA13 == 2),      # GNA13 is a potential ooncogene
-    'RAD51C' = (RAD51C == 2),    # RAD51C mutation related to cancer
-    'SPAG5' = (SPAG5 == 2),      # SPAG5 is a potential oncogene
+    'RAD51C' = (RAD51C == -2 | RAD51C == -1),    # RAD51C mutation related to cancer
+    'WIPI1' = (WIPI1 == -2 | WIPI1 == -1),  # WIPI1 is a tumor suppressor
+    'COIL' = (COIL == 2),
     'SRSF7' = (SRSF7 == 2 | SRSF7 == 1),# SFRS7 mutation may be related to cancer
     'CHD1' = (CHD1 == -2 | CHD1 == -1),       # CHD1 is a tumor suppressor
-    'TP53' = (TP53 == -2 | TP53 == -1),       # TP53 is a tumor suppressor
+    'PITPNC1' = (PITPNC1 == 2),       # PITPNC1 is a potential oncogene
     'TBX2' = (TBX2 == 2)        # TBX2 is a tumor suppressor But many gained.
     )]
 
@@ -177,10 +178,11 @@ DT <- merge(clinData_DT, cnaData_DT, by='case')
 genes <- list(CACNG4 = DT$CACNG4,
               GNA13 = DT$GNA13,
               RAD51C = DT$RAD51C,
-              SPAG5 = DT$SPAG5,
+              COIL = DT$COIL,
+              WIPI1 = DT$WIPI1,
               SRSF7 = DT$SRSF7,
               CHD1 = DT$CHD1,
-              TP53 = DT$TP53,
+              PITPNC1 = DT$PITPNC1,
               TBX2 = DT$TBX2)
 
 # UNLIST is very important to enable sort.list (when constructing table), have to convert list -> atomic

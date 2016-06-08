@@ -100,36 +100,40 @@ expData <- getProfileData(mycgds, listOfGenes, mygeneticprofile,mycaselist)
 
 # > lapply(expData, function(x) return(summary(x)))
 # $CACNG4
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.       # CACNG4 is a potental oncogene
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 #   -1.04   -0.78   -0.20    0.33    0.80   24.10
 #
 # $CHD1
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.       # CHD1 is a tumor suppressor
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 #   -1.20   -0.58   -0.27   -0.06    0.18   14.40
 #
+# $COIL
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+#   -3.15   -0.71    0.22    0.87    1.60   29.20
+#
 # $GNA13
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # GNA13 is a potential ooncogene
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 #   -2.46   -0.57    0.20    0.57    1.15   18.80
 #
+# $PITPNC1
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+#    -1.6    -0.6    -0.1     0.3     0.7    46.4
+#
 # $RAD51C
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # RAD51C mutation related to cancer
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 #   -2.15   -0.55    0.02    0.49    0.98   22.50
 #
-# $SPAG5
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.      # SPAG5 is a potential oncogene
-#   -1.25   -0.57    0.09    0.56    1.10   19.50
-#
 # $SRSF7
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # SFRS7 mutation may be related to cancer
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 #   -2.29   -0.67   -0.14    0.05    0.59    6.22
 #
 # $TBX2
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # TBX2 is a tumor suppressor But many gained but is in fact lossed
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 #   -0.80   -0.42   -0.21    0.00    0.17   18.50
 #
-# $TP53
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     # TP53 is a tumor suppressor
-#   -2.20   -1.00   -0.38   -0.24    0.30    5.73
+# $WIPI1
+#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+#    -1.9    -0.7    -0.1     0.2     0.6    42.2
 
 expData_DT <- data.table(expData)[, ':='(
     'case' = row.names(expData)
