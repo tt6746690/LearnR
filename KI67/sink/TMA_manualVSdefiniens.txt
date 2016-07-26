@@ -1,4 +1,269 @@
+    case score.x category.x score.y category.y
+ 1:   16   10.93  definiens      17     manual
+ 2:   37    2.68  definiens       2     manual
+ 3:   55    1.66  definiens       2     manual
+ 4:   56    1.95  definiens       0     manual
+ 5:   57   16.51  definiens      35     manual
+ 6:   75   11.48  definiens      17     manual
+ 7:   77   15.90  definiens      20     manual
+ 8:   82    8.76  definiens       7     manual
+ 9:  106    1.96  definiens       3     manual
+10:  114   16.34  definiens      11     manual
+11:  118    6.75  definiens      10     manual
+12:  120   57.89  definiens      48     manual
+13:  139    4.32  definiens       3     manual
+14:  142   36.55  definiens      38     manual
+15:  179   18.94  definiens      29     manual
+16:  180    7.60  definiens       3     manual
+17:  181   35.76  definiens      38     manual
+18:  185    4.04  definiens       7     manual
+19:  207   12.70  definiens       5     manual
+20:  217   14.27  definiens      23     manual
+21:  233   13.00  definiens      17     manual
+22:  256    2.31  definiens       0     manual
+23:  272    2.95  definiens       3     manual
+24:  284   36.12  definiens      29     manual
+25:  291   10.88  definiens      18     manual
+26:  318   29.45  definiens      41     manual
+27:  334   15.09  definiens      21     manual
+28:  343   26.76  definiens      17     manual
+29:  351   21.30  definiens      17     manual
+30:  368   27.93  definiens      31     manual
+31:  381   24.95  definiens      38     manual
+32:  392    4.09  definiens       9     manual
+33:  403    6.18  definiens      14     manual
+34:  418   26.67  definiens      18     manual
+35:  448   12.10  definiens       9     manual
+36:  482   17.39  definiens      26     manual
+37:  517    9.27  definiens      13     manual
+38:  525   11.11  definiens       3     manual
+39:  563    8.93  definiens      11     manual
+40:  581    4.32  definiens       2     manual
+41:  584   25.49  definiens      14     manual
+42:  596    4.26  definiens       2     manual
+43:  600   10.63  definiens      10     manual
+44:  627    8.33  definiens       5     manual
+45:  638   20.26  definiens      17     manual
+46:  664   11.84  definiens       6     manual
+    case score.x category.x score.y category.y
 [1] "1 TMA block analysis output:"
+    case score.x category.x score.y category.y
+ 1:   16    5.42  definiens      17     manual
+ 2:   57    9.28  definiens      35     manual
+ 3:   75    5.33  definiens      17     manual
+ 4:   77    8.86  definiens      20     manual
+ 5:  142    6.08  definiens      38     manual
+ 6:  179    9.29  definiens      29     manual
+ 7:  217    6.98  definiens      23     manual
+ 8:  233    5.49  definiens      17     manual
+ 9:  284    8.15  definiens      29     manual
+10:  291    1.46  definiens      18     manual
+11:  334    8.38  definiens      21     manual
+12:  343    6.25  definiens      17     manual
+13:  351    5.02  definiens      17     manual
+14:  368   14.10  definiens      31     manual
+15:  381   11.20  definiens      38     manual
+16:  418   12.02  definiens      18     manual
+17:  482   10.09  definiens      26     manual
+18:  638   11.76  definiens      17     manual
+    case score category i.score i.category
+ 1:   16    17   manual  5.4247  definiens
+ 2:   20     9   manual  9.0909  definiens
+ 3:   37     2   manual  0.5047  definiens
+ 4:   55     2   manual  0.1167  definiens
+ 5:   56     0   manual  0.0205  definiens
+ 6:   57    35   manual  9.2825  definiens
+ 7:   75    17   manual  5.3281  definiens
+ 8:   77    20   manual  8.8614  definiens
+ 9:   82     7   manual  1.1933  definiens
+10:  106     3   manual  0.3647  definiens
+11:  114    11   manual  3.3718  definiens
+12:  118    10   manual  3.4894  definiens
+13:  120    48   manual 41.1307  definiens
+14:  139     3   manual  0.8219  definiens
+15:  142    38   manual  6.0784  definiens
+16:  179    29   manual  9.2885  definiens
+17:  180     3   manual  3.1630  definiens
+18:  181    38   manual 18.3125  definiens
+19:  185     7   manual  1.3098  definiens
+20:  207     5   manual  6.4378  definiens
+21:  217    23   manual  6.9815  definiens
+22:  233    17   manual  5.4852  definiens
+23:  256     0   manual  0.0903  definiens
+24:  272     3   manual  1.5616  definiens
+25:  284    29   manual  8.1462  definiens
+26:  291    18   manual  1.4602  definiens
+27:  318    41   manual 19.1517  definiens
+28:  334    21   manual  8.3846  definiens
+29:  343    17   manual  6.2461  definiens
+30:  351    17   manual  5.0179  definiens
+31:  368    31   manual 14.0991  definiens
+32:  381    38   manual 11.2004  definiens
+33:  392     9   manual  2.2388  definiens
+34:  403    14   manual  3.5895  definiens
+35:  418    18   manual 12.0185  definiens
+36:  448     9   manual  4.3609  definiens
+37:  482    26   manual 10.0867  definiens
+38:  517    13   manual  5.0936  definiens
+39:  525     3   manual  5.5285  definiens
+40:  563    11   manual  1.3411  definiens
+41:  581     2   manual  0.5314  definiens
+42:  584    14   manual  5.3617  definiens
+43:  596     2   manual  0.2889  definiens
+44:  600    10   manual  5.7411  definiens
+45:  627     5   manual  2.3715  definiens
+46:  638    17   manual 11.7625  definiens
+47:  664     6   manual  5.3247  definiens
+    case score category i.score i.category
+
+Pearson correlation estimates
+ cor 
+0.79 
+
+Pearson correlation p-value
+[1] 4.12e-11
+
+limits of agreements
+[1] -7.06
+[1] 25
+
+z test confidence interval (if does not contain 0 -> exists bias):
+[1]  6.62 11.29
+attr(,"conf.level")
+[1] 0.95
+
+
+
+
+
+[1] "1 TMA block analysis output:"
+   case score.x category.x score.y category.y
+1:   16    10.9  definiens      17     manual
+2:   75    11.5  definiens      17     manual
+3:  217    14.3  definiens      23     manual
+4:  233    13.0  definiens      17     manual
+5:  291    10.9  definiens      18     manual
+    case score category i.score i.category
+ 1:   16    17   manual   10.93  definiens
+ 2:   37     2   manual    2.68  definiens
+ 3:   55     2   manual    1.66  definiens
+ 4:   56     0   manual    1.95  definiens
+ 5:   57    35   manual   16.51  definiens
+ 6:   75    17   manual   11.48  definiens
+ 7:   77    20   manual   15.90  definiens
+ 8:   82     7   manual    8.76  definiens
+ 9:  106     3   manual    1.96  definiens
+10:  114    11   manual   16.34  definiens
+11:  118    10   manual    6.75  definiens
+12:  120    48   manual   57.89  definiens
+13:  139     3   manual    4.32  definiens
+14:  142    38   manual   36.55  definiens
+15:  179    29   manual   18.94  definiens
+16:  180     3   manual    7.60  definiens
+17:  181    38   manual   35.76  definiens
+18:  185     7   manual    4.04  definiens
+19:  207     5   manual   12.70  definiens
+20:  217    23   manual   14.27  definiens
+21:  233    17   manual   13.00  definiens
+22:  256     0   manual    2.31  definiens
+23:  272     3   manual    2.95  definiens
+24:  284    29   manual   36.12  definiens
+25:  291    18   manual   10.88  definiens
+26:  318    41   manual   29.45  definiens
+27:  334    21   manual   15.09  definiens
+28:  343    17   manual   26.76  definiens
+29:  351    17   manual   21.30  definiens
+30:  368    31   manual   27.93  definiens
+31:  381    38   manual   24.95  definiens
+32:  392     9   manual    4.09  definiens
+33:  403    14   manual    6.18  definiens
+34:  418    18   manual   26.67  definiens
+35:  448     9   manual   12.10  definiens
+36:  482    26   manual   17.39  definiens
+37:  517    13   manual    9.27  definiens
+38:  525     3   manual   11.11  definiens
+39:  563    11   manual    8.93  definiens
+40:  581     2   manual    4.32  definiens
+41:  584    14   manual   25.49  definiens
+42:  596     2   manual    4.26  definiens
+43:  600    10   manual   10.63  definiens
+44:  627     5   manual    8.33  definiens
+45:  638    17   manual   20.26  definiens
+46:  664     6   manual   11.84  definiens
+    case score category i.score i.category
+
+Pearson correlation estimates
+  cor 
+0.856 
+
+Pearson correlation p-value
+[1] 3.51e-14
+
+limits of agreements
+[1] -12.2
+[1] 13.5
+
+z test confidence interval (if does not contain 0 -> exists bias):
+[1] -1.24  2.56
+attr(,"conf.level")
+[1] 0.95
+
+
+
+
+
+[1] "1 TMA block analysis output:"
+Empty data.table (0 rows) of 5 cols: case,score.x,category.x,score.y,category.y
+    case score category i.score i.category
+ 1:   26     0   manual   0.139  definiens
+ 2:   28     5   manual   5.436  definiens
+ 3:   36     3   manual   6.417  definiens
+ 4:   52     2   manual   3.065  definiens
+ 5:   65     8   manual   8.287  definiens
+ 6:   70     5   manual   4.206  definiens
+ 7:   89     0   manual   0.185  definiens
+ 8:   92    14   manual   5.207  definiens
+ 9:   97     2   manual   5.849  definiens
+10:   98    14   manual  13.386  definiens
+11:  122     8   manual   2.611  definiens
+12:  126     0   manual   4.516  definiens
+13:  148     7   manual  11.791  definiens
+14:  168     5   manual   7.163  definiens
+15:  190    18   manual  17.836  definiens
+16:  228     5   manual   1.197  definiens
+17:  240    32   manual  38.730  definiens
+18:  244     2   manual   4.321  definiens
+19:  249    15   manual  13.015  definiens
+20:  271     3   manual   2.500  definiens
+21:  282     2   manual   4.255  definiens
+22:  295    28   manual  34.212  definiens
+23:  301     5   manual   1.781  definiens
+24:  341    11   manual   9.642  definiens
+25:  342     9   manual  11.560  definiens
+26:  353     1   manual   0.480  definiens
+27:  382    27   manual  31.362  definiens
+28:  395    11   manual   5.224  definiens
+29:  408    15   manual  10.395  definiens
+30:  413     0   manual   1.106  definiens
+31:  465     2   manual   7.143  definiens
+32:  470     7   manual  15.357  definiens
+33:  472     7   manual   9.566  definiens
+34:  481     9   manual   6.818  definiens
+35:  487     4   manual   3.828  definiens
+36:  513     5   manual   3.705  definiens
+37:  529    15   manual  11.737  definiens
+38:  533     2   manual   3.929  definiens
+39:  572     4   manual   5.505  definiens
+40:  587     8   manual  10.643  definiens
+41:  599    11   manual   9.686  definiens
+42:  603     6   manual   6.902  definiens
+43:  608    11   manual   7.490  definiens
+44:  616    25   manual  25.882  definiens
+45:  617     1   manual   3.853  definiens
+46:  620    44   manual  28.712  definiens
+47:  634     6   manual   5.633  definiens
+48:  656    14   manual   8.998  definiens
+    case score category i.score i.category
 
 Pearson correlation estimates
   cor 
@@ -15,7 +280,6 @@ z test confidence interval (if does not contain 0 -> exists bias):
 [1] -1.24  1.10
 attr(,"conf.level")
 [1] 0.95
-
 
 
 

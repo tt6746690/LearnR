@@ -1,0 +1,84 @@
+ Average Score Intraclass Correlation
+
+   Model: twoway 
+   Type : agreement 
+
+   Subjects = 232 
+     Raters = 2 
+   ICC(A,2) = 0.173
+
+ F-Test, H0: r0 = 0 ; H1: r0 > 0 
+F(231,11.8) = 1.49 , p = 0.223 
+
+ 95%-Confidence Interval for ICC Population Values:
+  -0.245 < ICC < 0.459
+ Average Score Intraclass Correlation
+
+   Model: twoway 
+   Type : agreement 
+
+   Subjects = 204 
+     Raters = 2 
+   ICC(A,2) = 0.439
+
+ F-Test, H0: r0 = 0 ; H1: r0 > 0 
+F(203,6.59) = 2.59 , p = 0.0987 
+
+ 95%-Confidence Interval for ICC Population Values:
+  -0.258 < ICC < 0.72
+ Average Score Intraclass Correlation
+
+   Model: twoway 
+   Type : agreement 
+
+   Subjects = 197 
+     Raters = 2 
+   ICC(A,2) = 0.538
+
+ F-Test, H0: r0 = 0 ; H1: r0 > 0 
+F(196,58.8) = 2.37 , p = 9.61e-05 
+
+ 95%-Confidence Interval for ICC Population Values:
+  0.31 < ICC < 0.68
+ Average Score Intraclass Correlation
+
+   Model: twoway 
+   Type : agreement 
+
+   Subjects = 208 
+     Raters = 2 
+   ICC(A,2) = 0.892
+
+ F-Test, H0: r0 = 0 ; H1: r0 > 0 
+F(207,77.6) = 10.1 , p = 1.79e-23 
+
+ 95%-Confidence Interval for ICC Population Values:
+  0.841 < ICC < 0.924
+ Average Score Intraclass Correlation
+
+   Model: twoway 
+   Type : agreement 
+
+   Subjects = 216 
+     Raters = 2 
+   ICC(A,2) = 0.351
+
+ F-Test, H0: r0 = 0 ; H1: r0 > 0 
+ F(215,4.6) = 2.44 , p = 0.173 
+
+ 95%-Confidence Interval for ICC Population Values:
+  -0.315 < ICC < 0.678
+ Average Score Intraclass Correlation
+
+   Model: twoway 
+   Type : agreement 
+
+   Subjects = 184 
+     Raters = 2 
+   ICC(A,2) = 0.596
+
+ F-Test, H0: r0 = 0 ; H1: r0 > 0 
+F(183,5.15) = 4 , p = 0.0571 
+
+ 95%-Confidence Interval for ICC Population Values:
+  -0.182 < ICC < 0.823
