@@ -125,6 +125,21 @@ generateStatistics <- function(DT, manual_DT){
 #
 # }
 
+get_scatter_plot <- function(DT, manual_DT, yaxis, title){
+  # To perform SQL type inner joins set ON clause as keys of tables
+  setkey(DT, case)
+  setkey(manual_DT, case)
+  # Perform inner join, eliminating not matched rows from Right
+  rDT <- manual_DT[DT, nomatch=0]
+  q <- ggplot(rDT, aes(x=score, y=i.score)) +
+  geom_point(alpha=0.3) +
+  geom_abline(intercept = 0, slope = 1) +
+  labs(x="manual scores", y=yaxis, title=title) +
+  expand_limits(x=c(0, 100), y=c(0, 100))
+  return(q)
+}
+
+
 get_ba_plot <- function(DT, manual_DT, title){
   # To perform SQL type inner joins set ON clause as keys of tables
   setkey(DT, case)

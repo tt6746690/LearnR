@@ -43,6 +43,20 @@ options(digits=3)
 
 
 
+## Scatterplot
+##########################################################################################
+# pdf('./sink/scatterplot.pdf', height=6, width=18)
+# scatterplot <- list()
+# scatterplot[[1]] <- get_scatter_plot(willa_aperio, willa_manual, "Rater 1 Aperio", "Rater 1 Manual vs Rater 1 Aperio")
+# scatterplot[[2]] <- get_scatter_plot(tian_aperio, willa_manual,  "Rater 2 Aperio", "Rater 1 Manual vs Rater 2 Aperio")
+# scatterplot[[3]] <- get_scatter_plot(willa_definiens, willa_manual, "Rater 3 Definiens", "Rater 1 Manual vs Rater 3 Definiens")
+# multiplot(plotlist=scatterplot, cols=3, layout=matrix(c(1, 2, 3), nrow = 1, byrow = TRUE))
+# dev.off()
+##########################################################################################
+
+
+
+
 ## BA plot
 #########################################################################################
 # pdf("./sink/baplot.pdf", height=6, width=18)
